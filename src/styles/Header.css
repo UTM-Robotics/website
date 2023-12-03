@@ -1,0 +1,16 @@
+header {
+  background-color: black; /* Change the background color to black */
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
