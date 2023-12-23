@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+canvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -2;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: white; /* Set the default text color to white */
+}
+  
+#main {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#desc {
+	font-size: 25px;
+	margin-right: 50%;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	margin-top: 13%;
+	font-family: 'PT Mono', monospace;
+}
+
+h2 {
+	font-size: 30px; /* Set the font size to 20 pixels */
+}

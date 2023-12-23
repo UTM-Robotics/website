@@ -1,16 +1,21 @@
-header {
-  background-color: black; /* Change the background color to black */
-  color: white;
-  padding: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+nav {
+	background-color: rgba(0, 0, 0, 0);
+
+	font-size: 20px;
+	font-family: 'Montserrat';
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
 }
 
 nav a {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: white;
+
+	font-size: 1em;
 }
