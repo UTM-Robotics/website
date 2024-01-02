@@ -1,0 +1,85 @@
+img {
+	display: block;
+	width: 90%;
+	margin-top: 15vh;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+h2 {
+	margin: 0;
+	font-size: 35px;
+}
+
+#aboutDiv {
+	display: flex;
+	margin-left: 80px;
+	margin-top: 20vh;
+}
+
+#aboutDiv p {
+	margin-left: 20%;
+}
+
+#goalsDiv {
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 25vh;
+
+	display: flex;
+}
+
+#goalGrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	margin-left: 20%;
+}
+
+.goalTitle {
+	font-size: 25px;
+	margin-top: 0px;
+}
+
+.goalDescription {
+	font-size: 16px;
+}
+
+#teamDiv {
+	margin-top: 7vh;
+}
+
+#teamDiv h1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Team.css */
+
+.team-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.team-member {
+	width: 23%;
+	margin: 10px;
+	text-align: center;
+	border: 1px solid #ddd;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.image-container {
+	overflow: hidden; /* Hide overflowing parts of the image */
+	border-radius: 50px; /* Adjust the radius as needed */
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px; /* Adjust the radius to match the container */
+}
+  

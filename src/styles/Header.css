@@ -1,21 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 nav {
 	background-color: rgba(0, 0, 0, 0);
 
 	font-size: 20px;
-	font-family: 'Montserrat';
+
+	position: fixed;
+	top: 60px;
+	right: 60px;
+    
 }
 
 nav ul {
 	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
 	display: flex;
 	justify-content: space-around;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 30px;
 }
 
 nav a {
 	text-decoration: none;
 	color: white;
 
-	font-size: 1em;
+	font-size: inherit;
 }
+
+button {
+	border: none;
+	background-color: transparent;
+	color: inherit;
+	cursor: pointer;
+	padding: 0;
+	font-size: inherit;
+}
+  
+button:focus {
+	outline: none;
+}  
