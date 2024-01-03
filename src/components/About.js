@@ -20,10 +20,10 @@ const teamMembers = [
 		id: 1,
 		name: 'Alex Apostolu',
 		role: 'Tech',
-		bio: 'I have katanas, I like beekeeping and biking, and I code a bunch',
+		bio: 'I have katanas, I do photoghraphy, I like beekeeping and biking, and I code a bunch',
 		image: alex,
 	},
-  ];
+];
 
 const About = () => (
 	<div>
@@ -60,13 +60,15 @@ const About = () => (
 		<div id="teamDiv">
 			<h1>Meet the Team</h1>
 
-			<div className="team-container">
+			<div id="teamContainer">
 				{teamMembers.map((member) => (
-					<div key={member.id} className="team-member">
-					<img src={member.image} alt={member.name} />
-					<h3>{member.name}</h3>
-					<p>{member.role}</p>
-					<p>{member.bio}</p>
+					<div key={member.id} className="teamMember">
+						<img src={member.image} alt={member.name}/>
+						<div className="desc">
+							<h3 className="name">{member.name}</h3>
+							<p className="role">{member.role}</p>
+							<p className="bio">{member.bio}</p>
+						</div>
 					</div>
 				))}
 			</div>
