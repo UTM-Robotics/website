@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import StarryNight from './backgrounds/StarryNight'
 import Header from './Header'
@@ -9,7 +9,7 @@ import "../styles/Home.css"
 const Home = () => {
 	return (
 		<div>
-
+			
 		<StarryNight/>
 		<Header/>
 

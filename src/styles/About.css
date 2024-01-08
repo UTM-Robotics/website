@@ -9,12 +9,12 @@ h2 {
     font-size: 35px;
 }
 
-#aboutDiv {
+#aboutusDiv {
     display: flex;
     margin: 20vh 0 0 80px;
 }
 
-#aboutDiv p {
+#aboutusDiv p {
     margin-left: 20%;
 }
 

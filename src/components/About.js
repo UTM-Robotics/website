@@ -18,10 +18,64 @@ const GoalCell = ({ title, description }) => (
 const teamMembers = [
 	{
 		id: 1,
+		name: 'Max',
+		role: 'Mr President Sir',
+		bio: 'I am Sir Mr. president'
+	},
+	{
+		id: 2,
+		name: 'Usha',
+		role: 'Exec Communication',
+		bio: ''
+	},
+	{
+		id: 3,
+		name: 'Razeen',
+		role: 'Exec Events',
+		bio: ''
+	},
+	{
+		id: 4,
+		name: 'Travis',
+		role: 'Exec Finance',
+		bio: ''
+	},
+	{
+		id: 5,
+		name: 'Ido',
+		role: 'Exec Coordination',
+		bio: ''
+	},
+	{
+		id: 6,
 		name: 'Alex Apostolu',
 		role: 'Tech',
-		bio: 'I have katanas, I do photoghraphy, I like beekeeping and biking, and I code a bunch',
+		bio: 'I do photoghraphy, I like beekeeping and biking, and I code a bunch',
 		image: alex,
+	},
+	{
+		id: 7,
+		name: 'Ayman',
+		role: 'Tech',
+		bio: ''
+	},
+	{
+		id: 8,
+		name: 'Damon',
+		role: 'Tech',
+		bio: ''
+	},
+	{
+		id: 9,
+		name: 'Yajan',
+		role: 'Tech',
+		bio: ''
+	},
+	{
+		id: 10,
+		name: 'Aaron',
+		role: 'Logistics',
+		bio: ''
 	},
 ];
 
@@ -30,12 +84,12 @@ const About = () => (
 		<StarryNight/>
 		<Header/>
 
-		<img src={teamPhoto} alt="Robotics Team Photo"></img>
+		<img src={teamPhoto} alt="Robotics Team"></img>
 
-		<div id="aboutDiv">
+		<div id="aboutusDiv">
 			<h2>About Us</h2>
 
-			<p>blsdfjkashbvjkashbdfkahwbfdkjasgdfjkahsgdfjhgasf</p>
+			<p>We are the robotics club.</p>
 		</div>
 
 		<div id="goalsDiv">

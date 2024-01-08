@@ -1,7 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Link, useNavigate } from 'react-router-dom';
 
 import '../styles/Header.css';
+
+import roboticsLogo from "../assets/robotics-logo.png"
 
 const Header = () => {
 	const navigate = useNavigate();
@@ -34,13 +36,17 @@ const Header = () => {
 	};
 
 	return (
-		<nav>
-			<ul>
-				<li><button onClick={handleHomeLinkClick}>Home</button></li>
-				<li><button onClick={handleEventsLinkClick}>Events</button></li>
-				<li><Link to="/about">About</Link></li>
-			</ul>
-		</nav>
+		<div className="header">
+			<img src={roboticsLogo} alt="Robotics Logo"></img>
+
+			<nav>
+				<ul>
+					<li><button onClick={handleHomeLinkClick}>Home</button></li>
+					<li><button onClick={handleEventsLinkClick}>Events</button></li>
+					<li><Link to="/about">About</Link></li>
+				</ul>
+			</nav>
+		</div>
 	);
 }
 
