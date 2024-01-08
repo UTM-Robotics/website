@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Link, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
 
 import '../styles/Header.css';
 
@@ -26,7 +26,7 @@ const Header = () => {
 		setTimeout(() => {
 		  	const element = document.getElementById('events');
 		  	if (element) {
-				const offset = element.offsetTop - 90;
+				const offset = element.offsetTop + 50;
 				window.scrollTo({
 					top: offset,
 					behavior: 'smooth',
@@ -35,15 +35,24 @@ const Header = () => {
 		}, 100);
 	};
 
+	const handleAboutLinkClick = () => {
+		navigate('/about');
+
+		window.scrollTo({
+			top: 0,
+			behavior: 'instant',
+		});
+	};
+
 	return (
-		<div className="header">
+		<div className="header" styles={{display: 'flex', alignItems:'center' }}>
 			<img src={roboticsLogo} alt="Robotics Logo"></img>
 
 			<nav>
 				<ul>
 					<li><button onClick={handleHomeLinkClick}>Home</button></li>
 					<li><button onClick={handleEventsLinkClick}>Events</button></li>
-					<li><Link to="/about">About</Link></li>
+					<li><button onClick={handleAboutLinkClick}>About</button></li>
 				</ul>
 			</nav>
 		</div>

@@ -1,4 +1,15 @@
 #main {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 1s ease, transform 1s ease;
+}
+
+#main.fade-in-up {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+#main {
 	background-color: rgba(0, 0, 0, 0);
 	margin-left: 100px;
 	margin-right: 100px;

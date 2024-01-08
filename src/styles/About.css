@@ -1,10 +1,21 @@
-img {
+.aboutContainer {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 1s ease, transform 1s ease;
+}
+
+.aboutContainer.fade-in-up {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.aboutContainer img {
     display: block;
     width: 90%;
     margin: 15vh auto 0;
 }
 
-h2 {
+.aboutContainer h2 {
     margin: 0;
     font-size: 35px;
 }
@@ -63,6 +74,9 @@ h2 {
     overflow: hidden;
     border-radius: 30px;
     position: relative;
+    margin-top: 50px;
+    margin-left: 12px;
+    margin-right: 12px; 
 }
 
 .teamMember img {

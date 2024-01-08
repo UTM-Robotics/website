@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import StarryNight from './backgrounds/StarryNight';
 import Header from './Header';
@@ -19,8 +19,8 @@ const teamMembers = [
 	{
 		id: 1,
 		name: 'Max',
-		role: 'Mr President Sir',
-		bio: 'I am Sir Mr. president'
+		role: 'President',
+		bio: ''
 	},
 	{
 		id: 2,
@@ -50,7 +50,7 @@ const teamMembers = [
 		id: 6,
 		name: 'Alex Apostolu',
 		role: 'Tech',
-		bio: 'I do photoghraphy, I like beekeeping and biking, and I code a bunch',
+		bio: 'Member at UofT Bee Club',
 		image: alex,
 	},
 	{
@@ -79,56 +79,68 @@ const teamMembers = [
 	},
 ];
 
-const About = () => (
-	<div>
-		<StarryNight/>
-		<Header/>
 
-		<img src={teamPhoto} alt="Robotics Team"></img>
 
-		<div id="aboutusDiv">
-			<h2>About Us</h2>
+const About = () => {
+	// Fade in and up.
+	useEffect(() => {
+		const aboutContainer = document.querySelector('.aboutContainer');
+		aboutContainer.classList.add('fade-in-up');
+	}, []);
 
-			<p>We are the robotics club.</p>
-		</div>
+	return (
+		<div>
+			<StarryNight/>
+			<Header/>
 
-		<div id="goalsDiv">
-			<h2>Our Goals</h2>
+			<div className="aboutContainer">
+				<img src={teamPhoto} alt="Robotics Team"></img>
 
-			<div id="goalGrid">
-				<GoalCell
-					title="Workshops"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
-				<GoalCell
-					title="Projects"
-					description="Ut volutpat sapien sit amet magna fermentum, ut auctor mi tempus."/>
-				<GoalCell
-					title="Students"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
-				<GoalCell
-					title="Collaborations"
-					description="Ut volutpat sapien sit amet magna fermentum, ut auctor mi tempus."/>
-			</div>
-		</div>
+				<div id="aboutusDiv">
+					<h2>About Us</h2>
 
-		<div id="teamDiv">
-			<h1>Meet the Team</h1>
+					<p>We are the robotics club.</p>
+				</div>
 
-			<div id="teamContainer">
-				{teamMembers.map((member) => (
-					<div key={member.id} className="teamMember">
-						<img src={member.image} alt={member.name}/>
-						<div className="desc">
-							<h3 className="name">{member.name}</h3>
-							<p className="role">{member.role}</p>
-							<p className="bio">{member.bio}</p>
-						</div>
+				<div id="goalsDiv">
+					<h2>Our Goals</h2>
+
+					<div id="goalGrid">
+						<GoalCell
+							title="Workshops"
+							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+						<GoalCell
+							title="Projects"
+							description="Ut volutpat sapien sit amet magna fermentum, ut auctor mi tempus."/>
+						<GoalCell
+							title="Students"
+							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+						<GoalCell
+							title="Collaborations"
+							description="Ut volutpat sapien sit amet magna fermentum, ut auctor mi tempus."/>
 					</div>
-				))}
+				</div>
+
+				<div id="teamDiv">
+					<h1>Meet the Team</h1>
+
+					<div id="teamContainer">
+						{teamMembers.map((member) => (
+							<div key={member.id} className="teamMember">
+								<img src={member.image} alt={member.name}/>
+								<div className="desc">
+									<h3 className="name">{member.name}</h3>
+									<p className="role">{member.role}</p>
+									<p className="bio">{member.bio}</p>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-);
+	);
+};
   
 
 export default About;

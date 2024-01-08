@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 import StarryNight from './backgrounds/StarryNight'
 import Header from './Header'
@@ -7,6 +7,12 @@ import Events from './Events'
 import "../styles/Home.css"
 
 const Home = () => {
+	// Fade in and up.
+	useEffect(() => {
+		const mainContainer = document.querySelector('#main');
+		mainContainer.classList.add('fade-in-up');
+	}, []);
+
 	return (
 		<div>
 			
@@ -22,7 +28,6 @@ const Home = () => {
 
 				<p>We host robotic workshops and casual meetups.<br/>Check out our Instagram!</p>
 			</div>
-
 
 			<Events id="#events"/>
 

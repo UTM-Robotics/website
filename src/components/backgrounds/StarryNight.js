@@ -96,7 +96,7 @@ const StarryNight = () => {
 		};
 	}, []); // Empty dependency array ensures the effect runs only once
 
-	return <div>{/* Additional content related to P5Main */}</div>;
+	return <div></div>;
 };
 
 export default StarryNight;
