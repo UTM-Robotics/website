@@ -6,7 +6,13 @@ import Header from './Header';
 import "../styles/About.css"
 
 import teamPhoto from '../assets/team_photo.jpg'
-import alex from '../assets/alex.jpg'
+import aaron from '../assets/Aaron.jpeg'
+import alex from '../assets/Alex.jpg'
+import damon from '../assets/Damon.JPG'
+import ido from '../assets/Ido.jpg'
+import max from '../assets/Max.JPG'
+import razeen from '../assets/Razeen.JPG'
+import travis from '../assets/Travis.jpeg'
 
 const GoalCell = ({ title, description }) => (
 	<div className="goalCell">
@@ -20,37 +26,41 @@ const teamMembers = [
 		id: 1,
 		name: 'Max',
 		role: 'President',
-		bio: ''
+		bio: '',
+		image: max
 	},
 	{
 		id: 2,
 		name: 'Usha',
 		role: 'Exec Communication',
-		bio: ''
+		bio: 'I\'ve lived in six countries'
 	},
 	{
 		id: 3,
 		name: 'Razeen',
 		role: 'Exec Events',
-		bio: ''
+		bio: '3rd year CS and Math student. I enjoy working on robotics, automation and Software Dev.',
+		image: razeen
 	},
 	{
 		id: 4,
 		name: 'Travis',
 		role: 'Exec Finance',
-		bio: ''
+		bio: 'Hi! My name is Travis, a fifth year CS Spec. I\'ll be your finance exec this remaining semester.',
+		image: travis
 	},
 	{
 		id: 5,
 		name: 'Ido',
 		role: 'Exec Coordination',
-		bio: ''
+		bio: 'I used to have two cats',
+		image: ido
 	},
 	{
 		id: 6,
 		name: 'Alex Apostolu',
 		role: 'Tech',
-		bio: 'Member at UofT Bee Club',
+		bio: 'Member at UofT Bees Club',
 		image: alex,
 	},
 	{
@@ -63,20 +73,40 @@ const teamMembers = [
 		id: 8,
 		name: 'Damon',
 		role: 'Tech',
-		bio: ''
+		bio: '',
+		image: damon
 	},
 	{
 		id: 9,
 		name: 'Yajan',
 		role: 'Tech',
-		bio: ''
+		bio: 'Music (Played Drums for 5yrs), Programming/Engineering, JiuJitsu/Muay Thai'
 	},
 	{
 		id: 10,
 		name: 'Aaron',
 		role: 'Logistics',
+		bio: '',
+		image: aaron
+	},
+	{
+		id: 11,
+		name: 'Daksh',
+		role: 'Mentor',
 		bio: ''
 	},
+	{
+		id: 12,
+		name: 'Hamza',
+		role: 'Mentor',
+		bio: 'I love talking about all sorts of fun and interesting topics, so feel free to reach out to me @hamza.pp on discord to chat!'
+	},
+	{
+		id: 11,
+		name: 'Sammy',
+		role: 'Mentor',
+		bio: 'I love low-level development and tinkering around with hardware, and I also love languages, both natural and programming. Feel free to say hi!'
+	}
 ];
 
 
@@ -99,7 +129,7 @@ const About = () => {
 				<div id="aboutusDiv">
 					<h2>About Us</h2>
 
-					<p>We are the robotics club.</p>
+					<p>UTM's home for robotics enthusiasts, hobbyists, and newcomers alike!</p>
 				</div>
 
 				<div id="goalsDiv">
@@ -108,16 +138,16 @@ const About = () => {
 					<div id="goalGrid">
 						<GoalCell
 							title="Workshops"
-							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+							description="We offer workshops throughout the academic year on a variety of topics, including Intro to Arduino, The Floor is Lava, and more! Our events are catered to students of all types, with a strong focus on beginner-friendly workshops."/>
 						<GoalCell
 							title="Projects"
-							description="Ut volutpat sapien sit amet magna fermentum, ut auctor mi tempus."/>
+							description="UTM Robotics connects students and mentors with UofT Robotics professors to complete for-credit project courses."/>
 						<GoalCell
 							title="Students"
-							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+							description="We aim to foster student interest and engagement in the field of Robotics through different events. Apart from workshops, we also offer general meetings where we host speakers, watch Battlebots, and help students interested in tinkering with Arduinos."/>
 						<GoalCell
 							title="Collaborations"
-							description="Ut volutpat sapien sit amet magna fermentum, ut auctor mi tempus."/>
+							description=""/>
 					</div>
 				</div>
 
