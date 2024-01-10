@@ -7,40 +7,47 @@ import sample2 from '../assets/sample2.jpg';
 import sample3 from '../assets/sample3.jpg';
 import sample4 from '../assets/sample4.jpeg';
 
+const eventDetails = [
+	{
+		id: 1,
+		name: "Battle Bots",
+		image: sample1,
+		description: "This is a battle bot. They battle. They bot."
+	},
+	{
+		id: 2,
+		name: "Arduino Workshop",
+		image: sample2,
+		description: "The floor is not lava, but you can change that!"
+	},
+	{
+		id: 3,
+		name: "Robot Dog Accesibility!",
+		image: sample3,
+		description: "They literally got that DAWG in them fr."
+	},
+	{
+		id: 4,
+		name: "Nuclear Reactor",
+		image: sample4,
+		description: "Come with us to make a full hydrogen atomic bomb in 17 minutes! Ask PETA."
+	}
+]
+
 const Events = () => {
 	return (
-		<div id="events">
-
-
-			<h2>Upcoming Events</h2>
-			
-			
-			<p>BATTLE BOTS.</p>
-			<img src={sample1} alt="Description of the image"></img>
-
-			<p>Arduino Workshop.</p>
-			<img src={sample2} alt="Description of the image"></img>
-
-			<p>Arduino Workshop.</p>
-			<img src={sample3} alt="Description of the image"></img>
-
-			<p>Arduino Workshop.</p>
-			<img src={sample4} alt="Description of the image"></img>
-
-
-
-
-
-			
-
-
-			<h2>Past Events</h2>
-
-			<p>Arduino workshop.</p>
-
-
-
+		<div id='event container'>
+			<h1>Events:</h1>
+			<div id="events">
+			{eventDetails.map(event => (
+				<div class='grid'>
+					<img src={event.image} alt={event.description}></img>
+					<p>{event.name}</p>
+					<span>{event.description}</span>
+				</div>
+			))}
 		</div>
+	</div>
 	);
 }
 

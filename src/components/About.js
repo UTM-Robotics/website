@@ -7,7 +7,7 @@ import "../styles/About.css"
 
 import teamPhoto from '../assets/team_photo.jpg'
 import aaron from '../assets/Aaron.jpeg'
-import alex from '../assets/Alex.jpg'
+import alex from '../assets/alex.jpg'
 import damon from '../assets/Damon.JPG'
 import ido from '../assets/Ido.jpg'
 import max from '../assets/Max.JPG'

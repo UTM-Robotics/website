@@ -1,11 +1,22 @@
 #events {
 	margin-top: 40vh;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	width: 100%;
 }
 
-#events h2 {
-	font-size: 40px;
+#events .grid {
+	width: 50%;
+	height: 50%;
+
+	margin: 0;
 }
 
 #events img {
-	width: 40%;
+	aspect-ratio: 1 / 1;
+	width: 65%;
+
 }

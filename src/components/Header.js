@@ -45,17 +45,14 @@ const Header = () => {
 	};
 
 	return (
-		<div className="header" styles={{display: 'flex', alignItems:'center' }}>
-			<img src={roboticsLogo} alt="Robotics Logo"></img>
-
-			<nav>
-				<ul>
-					<li><button onClick={handleHomeLinkClick}>Home</button></li>
-					<li><button onClick={handleEventsLinkClick}>Events</button></li>
-					<li><button onClick={handleAboutLinkClick}>About</button></li>
-				</ul>
-			</nav>
-		</div>
+		<nav>
+			<div id='logo'><img src={roboticsLogo} alt="Robotics Logo"></img></div>
+			<div id='nav_links'>
+				<button onClick={handleHomeLinkClick} id='redirect'>Home</button>
+				<button onClick={handleEventsLinkClick} id='redirect'>Events</button>
+				<Link to="/about" id='redirect'>About</Link>
+			</div>
+		</nav>
 	);
 }
 
