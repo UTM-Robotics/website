@@ -37,13 +37,13 @@ const eventDetails = [
 const Events = () => {
 	return (
 		<div id='event container'>
-			<h1>Events:</h1>
+			<h1>Events</h1>
 			<div id="events">
 			{eventDetails.map(event => (
 				<div class='grid'>
 					<img src={event.image} alt={event.description}></img>
-					<p>{event.name}</p>
-					<span>{event.description}</span>
+					<h1>{event.name}</h1>
+					<p>{event.description}</p>
 				</div>
 			))}
 		</div>
