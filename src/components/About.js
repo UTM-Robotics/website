@@ -7,7 +7,7 @@ import "../styles/About.css"
 
 import teamPhoto from '../assets/team_photo.jpg'
 import aaron from '../assets/Aaron.jpeg'
-import alex from '../assets/alex.jpg'
+import alex from '../assets/Alex.jpg'
 import damon from '../assets/Damon.JPG'
 import ido from '../assets/Ido.jpg'
 import max from '../assets/Max.JPG'
@@ -26,7 +26,7 @@ const teamMembers = [
 		id: 1,
 		name: 'Max',
 		role: 'President',
-		bio: '',
+		bio: 'I am Maksym Woychyshyn, President if the robotics club at UTM! I originally became interested in robotics in high school and this has led to me studying cs robotics courses at UTM. Looking forward to the semester',
 		image: max
 	},
 	{
@@ -64,12 +64,6 @@ const teamMembers = [
 		image: alex,
 	},
 	{
-		id: 7,
-		name: 'Ayman',
-		role: 'Tech',
-		bio: ''
-	},
-	{
 		id: 8,
 		name: 'Damon',
 		role: 'Tech',
@@ -83,10 +77,16 @@ const teamMembers = [
 		bio: 'Music (Played Drums for 5yrs), Programming/Engineering, JiuJitsu/Muay Thai'
 	},
 	{
+		id: 7,
+		name: 'Ayman',
+		role: 'Graphics',
+		bio: 'Hello hello, my name is Ayman, and I like to design and code! (or both, when it comes to frontend)'
+	},
+	{
 		id: 10,
 		name: 'Aaron',
 		role: 'Logistics',
-		bio: '',
+		bio: 'Always striving to be the most satisfying partner to work with, and always excited for the passionate talks with problem-solvers and dreamers, so come chat!',
 		image: aaron
 	},
 	{

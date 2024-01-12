@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import StarryNight from './backgrounds/StarryNight'
 import Header from './Header'
 import Events from './Events'
+import Footer from './Footer'
 
 import "../styles/Home.css"
 
@@ -32,6 +33,8 @@ const Home = () => {
 			<Events id="#events"/>
 
 		</div>
+
+		<Footer/>
 
 		</div>
 	);
