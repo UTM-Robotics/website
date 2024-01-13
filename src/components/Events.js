@@ -12,25 +12,29 @@ const eventDetails = [
 		id: 1,
 		name: "Battle Bots",
 		image: sample1,
-		description: "This is a battle bot. They battle. They bot."
+		description: "This is a battle bot. They battle. They bot.",
+		date: "Feb 14th 2023"
 	},
 	{
 		id: 2,
 		name: "Arduino Workshop",
 		image: sample2,
-		description: "The floor is not lava, but you can change that!"
+		description: "The floor is not lava, but you can change that!",
+		date: "Feb 14th 2023"
 	},
 	{
 		id: 3,
 		name: "Robot Dog Accesibility!",
 		image: sample3,
-		description: "They literally got that DAWG in them fr."
+		description: "They literally got that DAWG in them fr.",
+		date: "Feb 14th 2023"
 	},
 	{
 		id: 4,
 		name: "Nuclear Reactor",
 		image: sample4,
-		description: "Come with us to make a full hydrogen atomic bomb in 17 minutes! Ask PETA."
+		description: "Come with us to make a full hydrogen atomic bomb in 17 minutes! Ask PETA.",
+		date: "Feb 14th 2023"
 	}
 ]
 
@@ -42,9 +46,12 @@ const Events = () => {
 			{eventDetails.map(event => (
 				<div class='grid'>
 					<div className='card'>
+						<div id='details'>
+							<h1 className='eventTitle'>{event.name}</h1>
+							<p>{event.date}</p>
+							<p className='eventDesc'>{event.description}</p>
+						</div>
 						<img src={event.image} alt={event.description}></img>
-						<h1>{event.name}</h1>
-						<p>{event.description}</p>
 					</div>
 				</div>
 			))}
