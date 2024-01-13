@@ -37,6 +37,12 @@ const Header = () => {
 		window.scrollTo({ top: 0, behavior: 'instant' });
 	};
 
+	const handleContactLinkClick = () => {
+		navigate('/contact');
+
+		window.scrollTo({ top: 0, behavior: 'instant' });
+	};
+
 	return (
 		<nav className='headerContainer'>
 			<img className='logo' src={roboticsLogo} alt="Robotics Logo"></img>
@@ -44,6 +50,7 @@ const Header = () => {
 				<button onClick={handleHomeLinkClick} id='redirect'>Home</button>
 				<button onClick={handleEventsLinkClick} id='redirect'>Events</button>
 				<button onClick={handleAboutLinkClick} id='redirect'>About</button>
+				<button onClick={handleContactLinkClick} id='redirect'>Contact</button>
 			</div>
 		</nav>
 	);

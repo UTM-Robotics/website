@@ -10,7 +10,7 @@ import "../styles/Home.css"
 const Home = () => {
 	// Fade in and up.
 	useEffect(() => {
-		const mainContainer = document.querySelector('#main');
+		const mainContainer = document.querySelector('.homeContainer');
 		mainContainer.classList.add('fade-in-up');
 	}, []);
 
@@ -20,7 +20,7 @@ const Home = () => {
 		<StarryNight/>
 		<Header/>
 
-		<div id="main">
+		<div className='homeContainer'>
 
 			<h1 id="title">UTM ROBOTICS</h1>
 			
