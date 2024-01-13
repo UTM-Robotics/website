@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import StarryNight from './backgrounds/StarryNight'
 import Header from './Header'
 import Hero from './Hero'
+import Blurb from './Blurb'
 import Events from './Events'
 import Footer from './Footer'
 
@@ -24,6 +25,8 @@ const Home = () => {
 		<div id="main">
 			
 			<Hero/>
+
+			{/* <Blurb/> */}
 
 			<Events id="#events"/>
 
