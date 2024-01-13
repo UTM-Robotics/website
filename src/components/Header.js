@@ -45,7 +45,7 @@ const Header = () => {
 
 	return (
 		<nav className='headerContainer'>
-			<div id='logo'>
+			<div id='logo' onClick={handleHomeLinkClick}>
 			<img className='logo' src={roboticsLogo} alt="Robotics Logo"></img>
 			{/* <span id='logoName'>UTM Robotics</span> */}
 			</div>
