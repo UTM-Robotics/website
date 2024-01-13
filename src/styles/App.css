@@ -38,7 +38,7 @@ p, a, h2, h3, #redirect {
 
 @font-face {
 	font-family: "Syne";
-	src: url(../assets/fonts/Syne/Syne-VariableFont_wght.ttf);
+	src: url(../assets/fonts/Syne/static/Syne-Regular.ttf);
 }
 
 body {
@@ -46,8 +46,12 @@ body {
 	margin: 0 auto;
 }
 
+::-webkit-scrollbar{
+	display: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Syne', sans-serif;
+	font-family: 'Syne';
 }
 
 p, a, #redirect {

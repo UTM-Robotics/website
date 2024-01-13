@@ -1,6 +1,8 @@
 import React from 'react'
 
 import "../styles/Events.css"
+import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
+
 
 import sample1 from '../assets/sample1.jpg';
 import sample2 from '../assets/sample2.jpg';
@@ -13,32 +15,45 @@ const eventDetails = [
 		name: "Battle Bots",
 		image: sample1,
 		description: "This is a battle bot. They battle. They bot.",
-		date: "Feb 14th 2023"
+		date: "Feb 14th 2023",
+		url: `https://github.com/omnipotentsock`
 	},
 	{
 		id: 2,
 		name: "Arduino Workshop",
 		image: sample2,
 		description: "The floor is not lava, but you can change that!",
-		date: "Feb 14th 2023"
+		date: "Feb 14th 2023",
+		url: `https://github.com/omnipotentsock`
 	},
 	{
 		id: 3,
 		name: "Robot Dog Accesibility!",
 		image: sample3,
 		description: "They literally got that DAWG in them fr.",
-		date: "Feb 14th 2023"
+		date: "Feb 14th 2023",
+		url: `https://github.com/omnipotentsock`
 	},
 	{
 		id: 4,
 		name: "Nuclear Reactor",
 		image: sample4,
 		description: "Come with us to make a full hydrogen atomic bomb in 17 minutes! Ask PETA.",
-		date: "Feb 14th 2023"
+		date: "Feb 14th 2023",
+		url: `https://github.com/omnipotentsock`
 	}
 ]
 
+
 const Events = () => {
+
+	const navigate = useNavigate();
+	
+	const handleEventClick = () => {
+		navigate('/about');
+
+		window.scrollTo({ top: 0, behavior: 'instant' });
+	};
 	return (
 		<div id='eventContainer'>
 			<h1>Events</h1>
@@ -51,7 +66,7 @@ const Events = () => {
 							<p>{event.date}</p>
 							<p className='eventDesc'>{event.description}</p>
 						</div>
-						<img src={event.image} alt={event.description}></img>
+						<img src={event.image} alt={event.description} onClick={handleEventClick}></img>
 					</div>
 				</div>
 			))}

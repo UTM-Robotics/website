@@ -6,10 +6,10 @@
     padding-bottom: 8rem;
     z-index: 0;
 
-    background-image: url(../assets/sample2.jpg);
-    background-color: rgba(0, 0, 0, 0.788);
-    background-blend-mode: overlay;
-    box-shadow: 0 0 3rem 3rem #0e0e13 inset;
+    background-image: url(../assets/sample4.jpeg);
+    background-color: rgba(0, 0, 0, 0.87);
+    background-blend-mode:hue;
+    box-shadow: 0 0 10em 10em #0e0e13 inset;
 }
 
 #desc {
