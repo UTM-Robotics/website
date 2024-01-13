@@ -43,17 +43,8 @@ const eventDetails = [
 		url: `https://github.com/omnipotentsock`
 	}
 ]
-
-
 const Events = () => {
-
-	const navigate = useNavigate();
 	
-	const handleEventClick = () => {
-		navigate('/about');
-
-		window.scrollTo({ top: 0, behavior: 'instant' });
-	};
 	return (
 		<div id='eventContainer'>
 			<h1>Events</h1>
@@ -65,8 +56,10 @@ const Events = () => {
 							<h1 className='eventTitle'>{event.name}</h1>
 							<p>{event.date}</p>
 							<p className='eventDesc'>{event.description}</p>
+							<Link to={{pathname: event.url}} />
 						</div>
-						<img src={event.image} alt={event.description} onClick={handleEventClick}></img>
+						<button style={{backgroundImage: sample1, backgroundColor: '#73dbd4'}} onClick={() => window.open(event.url)}></button>
+						{/* <img src={event.image} alt={event.description} onClick={() => window.location.href = event.url}></img> */}
 					</div>
 				</div>
 			))}

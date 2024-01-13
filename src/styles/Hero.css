@@ -2,19 +2,21 @@
 #hero {
     width: 80%;
     margin: 0 auto;
-    margin-top: 8rem;
+    margin-top: 10rem;
     padding-bottom: 8rem;
     z-index: 0;
 
     background-image: url(../assets/sample4.jpeg);
-    background-color: rgba(0, 0, 0, 0.87);
-    background-blend-mode:hue;
-    box-shadow: 0 0 10em 10em #0e0e13 inset;
+    translate: 0 -15%;
+
+    background-color: rgba(0, 10, 2, 0.87);
+    background-blend-mode:overlay;
+    box-shadow: 0 0 10em 5em #0e0e13 inset;
 }
 
 #desc {
 	margin-left: 0px;
-    padding: 8rem 2rem;
+    padding: 2rem 2rem;
 
 }
 

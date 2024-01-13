@@ -55,12 +55,11 @@
 	margin: 0;
 }
 
-#events img {
+#events button {
 	display: block;
 	/* aspect-ratio: 1 / 1; */
 	object-fit: cover;
-	filter: blur(1px);
-	color: #fff;
+	/* filter: blur(1px); */
 	/* opacity: 0.5; */
 
 
