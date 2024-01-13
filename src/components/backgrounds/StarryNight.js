@@ -46,7 +46,7 @@ const StarryNight = () => {
 
 				let clr = Math.sin(time) * 50 + 10;
 				for (let d = clr + 150; d >= 0; --d) {
-					p.fill(128 - (d / (clr + 150)) * 128);
+					p.fill(12);
 					p.circle(-p.width / 2, -p.height / 2, d * (p.height / 80));
 				}
 

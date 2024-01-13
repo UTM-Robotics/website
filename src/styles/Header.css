@@ -3,7 +3,7 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 4;
 
 
 	display: flex;
@@ -11,12 +11,12 @@
 	align-items: center;
 	justify-content: space-between;
 
-	background-color: rgba(0, 0, 0, 0.7);
-	backdrop-filter: blur(5px);
+	background-color:#0c131011;
+	backdrop-filter: blur(15px);
 
-	border: 2px solid snow;
+	/* border: 2px solid snow;
 	border-top: 0;
-	border-radius: 0 0 18px 18px;
+	border-radius: 0 0 18px 18px; */
     
 }
 
@@ -27,6 +27,8 @@
 }
 
 #logo {
+	/* backdrop-filter: blur(15px); */
+
 }
 
 #logoName {

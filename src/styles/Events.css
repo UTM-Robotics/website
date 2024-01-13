@@ -1,3 +1,10 @@
+#eventContainer {
+	background-color: #005551;
+	padding: 5rem;
+	margin: 0;
+	z-index: 0;
+}
+
 #events {
 	display: flex;
 	flex-direction: row;
@@ -13,17 +20,25 @@
 }
 
 #events .grid {
-	width: 41%;
-	height: 50%;
+	width: 25%;
+	height: fit-content;
 
-	margin: 0 3rem 3rem 3rem;
-	padding-bottom: 3rem;
-
+	/* margin: 0 3rem 3rem 3rem; */
+	
 	text-align: center;
 	color: black;
+	
+}
 
+#events .card {
+	
 	background-color: snow;
 	border-radius: 36px;
+
+	margin: 0.5rem 1rem;
+
+	padding-bottom: 3rem;
+	height: 100%;
 }
 
 #events img {
@@ -33,6 +48,7 @@
 	margin: auto;
 	width: 100%;
 	border-radius: 36px 36px 0 0;
+	padding: 0;
 
 
 }
