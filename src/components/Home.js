@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 
-import StarryNight from './backgrounds/StarryNight'
 import Header from './Header'
 import Hero from './Hero'
 import Blurb from './Blurb'
@@ -18,8 +17,7 @@ const Home = () => {
 
 	return (
 		<div>
-			
-		<StarryNight/>
+
 		<Header/>
 
 		<div id="main">

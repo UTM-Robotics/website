@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import StarryNight from './backgrounds/StarryNight'
 import Header from './Header'
 import Footer from './Footer'
 
@@ -32,30 +31,37 @@ const Contact = () => {
 
 
 		// Clear the form after submission.
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+	
+		
+
+		// Confirmation message.
+		alert("Thanks for your message! We'll get back to you within 1-2 business days");
+		// Reset form data.
 		setFormData({ name: '', email: '', message: '' });
 	};
 	
 	return (
 		<div>
-			<StarryNight/>
 			<Header/>
 
 			<div className='contactContainer'>
-				<h2>Email us directly, or contact us using the form anonymously!</h2>
+				<h2 className='desc'>Email us directly, or contact us using the form anonymously!</h2>
 
-				<div className='info'>
+				<div className='contact'>
 					<div className='contactInfo'>
 
 						<h2>Email</h2>
 						<p>robotics@utmsu.ca</p>
 
 						<h2>Address</h2>
-						<p>???</p>
+						<p>HackLab, Deerfield Hall,<br/>North Bldg, Mississauga, ON L5L 3E2</p>
 					</div>
 
 					<form className='contactForm' onSubmit={handleSubmit}>
 						<label>
-							Name:
+							Name
 							<input
 							type="text"
 							name="name"
@@ -65,7 +71,7 @@ const Contact = () => {
 						</label>
 
 						<label>
-							Email:
+							Email
 							<input
 							type="email"
 							name="email"
@@ -76,7 +82,7 @@ const Contact = () => {
 						<br/>
 
 						<label>
-							Message:
+							Message
 							<textarea
 							name="message"
 							value={formData.message}
@@ -93,5 +99,7 @@ const Contact = () => {
 		</div>
 	);
 }
+}
 
 export default Contact;
+  

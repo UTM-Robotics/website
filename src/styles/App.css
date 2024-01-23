@@ -11,10 +11,9 @@
 	--black: #00000
 }
 
-<<<<<<< HEAD
 p, a, h2, h3, #redirect {
 	font-family: 'Inter', sans-serif;
-=======
+}
 /* --- FONTS --- */
 @font-face {
 	font-family: "Kanit";
@@ -52,9 +51,4 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Syne';
-}
-
-p, a, #redirect {
-	font-family: 'Kanit Light', sans-serif;
->>>>>>> 377de15 (Added hero element and updated header)
 }

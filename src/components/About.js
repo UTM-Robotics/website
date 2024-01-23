@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 
-import StarryNight from './backgrounds/StarryNight';
 import Header from './Header';
 
 import "../styles/About.css"
@@ -121,7 +120,6 @@ const About = () => {
 
 	return (
 		<div>
-			{/* <StarryNight/> */}
 			<Header/>
 			<div className='content'></div>
 			<div className="aboutContainer">
