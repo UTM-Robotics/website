@@ -1,45 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import Header from './Header'
 import Footer from './Footer'
 
 import '../styles/Contact.css';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+	const serviceId = process.env.REACT_APP_SERVICE_ID;
+	const templateId = process.env.REACT_APP_TEMPLATE_ID;
+	const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+
 	useEffect(() => {
 		const aboutContainer = document.querySelector('.contactContainer');
 		aboutContainer.classList.add('fade-in-up');
 	}, []);
 
-	const [formData, setFormData] = useState({
-		name: '',
-		email: '',
-		message: ''
-	});
-	
-	const handleChange = (e) => {
-		setFormData({ ...formData, [e.target.name]: e.target.value });
-	};
-	
-	const handleSubmit = (e) => {
-		e.preventDefault();
+	const form = useRef();
 
-		// Handle form submission here. We probably need like node.js and express
-		//
-		//
-
-
-
-		// Clear the form after submission.
-	const handleSubmit = async (e) => {
-		e.preventDefault();
-	
-		
-
-		// Confirmation message.
-		alert("Thanks for your message! We'll get back to you within 1-2 business days");
-		// Reset form data.
-		setFormData({ name: '', email: '', message: '' });
+	const sendEmail = (e) => {
+	  e.preventDefault(); // prevents the page from reloading when you hit “Send”
+   
+	  emailjs.sendForm(serviceId, templateId, form.current, publicKey)
+		.then((result) => {
+			alert("Thanks for contacting us! We'll be in touch within 1-2 business days");
+		}, (error) => {
+			alert("Oops, something went wrong! Please email us manually instead");
+		});
 	};
 	
 	return (
@@ -59,38 +47,30 @@ const Contact = () => {
 						<p>HackLab, Deerfield Hall,<br/>North Bldg, Mississauga, ON L5L 3E2</p>
 					</div>
 
-					<form className='contactForm' onSubmit={handleSubmit}>
+					<form ref={form} onSubmit={sendEmail} className='contactForm'>
 						<label>
 							Name
 							<input
-							type="text"
-							name="name"
-							value={formData.name}
-							onChange={handleChange}
+								type="text"
+								name="from_name"
 							/>
 						</label>
 
 						<label>
 							Email
 							<input
-							type="email"
-							name="email"
-							value={formData.email}
-							onChange={handleChange}
+								type="email"
+								name="from_email"
 							/>
 						</label>
-						<br/>
 
 						<label>
 							Message
 							<textarea
-							name="message"
-							value={formData.message}
-							onChange={handleChange}
+								name="message"
 							/>
 						</label>
-						<br />
-						<button type="submit">Submit</button>
+						<button type="submit" value="Send">Submit</button>
 					</form>
 				</div>
 			</div>
@@ -98,7 +78,6 @@ const Contact = () => {
 			<Footer/>
 		</div>
 	);
-}
 }
 
 export default Contact;
