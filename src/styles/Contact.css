@@ -10,12 +10,13 @@
 }
 
 .contactContainer {
-	margin-top: 19vh;
-	margin-bottom: 5vh;
+	margin: 10em 2em;
 }
 
 .contactContainer .desc {
-	margin-left: 15.2em;
+	display: block;
+	text-align: center;
+
 	margin-bottom: 60px;
 }
 
@@ -66,7 +67,7 @@
 	height: 150px;
   	resize: vertical;
 }
-  
+
 .contactForm button {
 	background-color: #3c863d;
 	color: #fff;

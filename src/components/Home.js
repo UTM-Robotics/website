@@ -24,9 +24,10 @@ const Home = () => {
 			
 			<Hero/>
 
-			{/* <Blurb/> */}
 
 			<Events id="#events"/>
+			
+			<Blurb/>
 
 		</div>
 

@@ -49,7 +49,7 @@ const Contact = () => {
 
 					<form ref={form} onSubmit={sendEmail} className='contactForm'>
 						<label>
-							Name
+							<span>Name</span>
 							<input
 								type="text"
 								name="from_name"
@@ -57,7 +57,7 @@ const Contact = () => {
 						</label>
 
 						<label>
-							Email
+							<span>Email</span>
 							<input
 								type="email"
 								name="from_email"
@@ -65,7 +65,7 @@ const Contact = () => {
 						</label>
 
 						<label>
-							Message
+							<span>Message</span>
 							<textarea
 								name="message"
 							/>

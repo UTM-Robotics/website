@@ -1,6 +1,8 @@
 #blurb {
     margin: 5rem 1rem;
     padding: 0;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .aboutContainer {
@@ -39,7 +41,7 @@
     font-size: 18px;
 }
 
-.goals {
+#goalsDiv {
     margin: 25vh 80px 0 80px;
     display: flex;
 }

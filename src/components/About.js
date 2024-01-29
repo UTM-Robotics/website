@@ -120,7 +120,7 @@ const About = () => {
 				<Blurb/>
 
 				<div id="teamDiv">
-					<h1>Meet the Team</h1>
+					<h1 className='ul'>Meet the Team</h1>
 
 					<div id="teamContainer">
 						{teamMembers.map((member) => (

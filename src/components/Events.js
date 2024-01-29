@@ -58,7 +58,7 @@ const Events = () => {
 							<p className='eventDesc'>{event.description}</p>
 							<Link to={{pathname: event.url}} />
 						</div>
-						<button style={{backgroundImage: sample1, backgroundColor: '#73dbd4'}} onClick={() => window.open(event.url)}></button>
+						<button style={{backgroundImage: sample1, backgroundColor: '#00221e'}} onClick={() => window.open(event.url)}></button>
 						{/* <img src={event.image} alt={event.description} onClick={() => window.location.href = event.url}></img> */}
 					</div>
 				</div>
