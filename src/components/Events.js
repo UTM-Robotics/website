@@ -14,7 +14,9 @@ const eventDetails = [
 		id: 1,
 		name: "Battle Bots",
 		image: sample1,
+		tag: "IN PERSON",
 		description: "This is a battle bot. They battle. They bot.",
+		host: "Jerma",
 		date: "Feb 14th 2023",
 		url: `https://github.com/omnipotentsock`
 	},
@@ -22,7 +24,9 @@ const eventDetails = [
 		id: 2,
 		name: "Arduino Workshop",
 		image: sample2,
+		tag: "IN PERSON",
 		description: "The floor is not lava, but you can change that!",
+		host: "Jerma",
 		date: "Feb 14th 2023",
 		url: `https://github.com/omnipotentsock`
 	},
@@ -30,7 +34,9 @@ const eventDetails = [
 		id: 3,
 		name: "Robot Dog Accesibility!",
 		image: sample3,
+		tag: "HYBRID",
 		description: "They literally got that DAWG in them fr.",
+		host: "Jerma",
 		date: "Feb 14th 2023",
 		url: `https://github.com/omnipotentsock`
 	},
@@ -38,7 +44,9 @@ const eventDetails = [
 		id: 4,
 		name: "Nuclear Reactor",
 		image: sample4,
-		description: "Come with us to make a full hydrogen atomic bomb in 17 minutes! Ask PETA.",
+		tag: "IN PERSON",
+		description: "Come with us to make a full hydrogen atomic bomb in 17 minutes! Ask PETA. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		host: "Jerma",
 		date: "Feb 14th 2023",
 		url: `https://github.com/omnipotentsock`
 	}
@@ -47,19 +55,19 @@ const Events = () => {
 	
 	return (
 		<div id='eventContainer'>
-			<h1>Events</h1>
+			<h1 id='header'>Events</h1>
 			<div id="events">
 			{eventDetails.map(event => (
 				<div class='grid'>
 					<div className='card'>
 						<div id='details'>
 							<h1 className='eventTitle'>{event.name}</h1>
-							<p>{event.date}</p>
+							<p className='eventTag'>{event.tag}</p>
 							<p className='eventDesc'>{event.description}</p>
-							<Link to={{pathname: event.url}} />
+							<p className='eventHost'><b>Hosted by: </b>{event.host}</p>
+							<p>{event.date}</p>
+							<button className='eventLink' onClick={() => window.open(event.url)}>{`View Details`}</button>
 						</div>
-						<button style={{backgroundImage: sample1, backgroundColor: '#00221e'}} onClick={() => window.open(event.url)}></button>
-						{/* <img src={event.image} alt={event.description} onClick={() => window.location.href = event.url}></img> */}
 					</div>
 				</div>
 			))}
