@@ -13,7 +13,9 @@ const Blurb = () => {
         <div id="blurb">
             <div class="aboutUs">
 				<h2>About Us</h2>
-				<p>UTM's home for robotics enthusiasts, hobbyists, and newcomers alike!</p>
+				<p>Welcome to the vibrant hub of robotics at the University of Toronto Mississauga (UTM)!
+
+At UTM Robotics, we foster a dynamic community for enthusiasts, hobbyists, and newcomers alike. <br></br><br></br>Our mission is to inspire, educate, and innovate within the ever-evolving field of robotics. Whether you're a seasoned pro or just beginning your journey into the exciting realm of robotics, you'll find a supportive and welcoming environment here.</p>
 			</div>
 
 			<div class="goals">

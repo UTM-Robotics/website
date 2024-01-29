@@ -26,8 +26,6 @@ const Home = () => {
 
 
 			<Events id="#events"/>
-			
-			<Blurb/>
 
 		</div>
 
