@@ -7,12 +7,14 @@
 
 
 	display: flex;
-	padding: 0.5rem 0 0.5rem 0;
+	padding: 1.5rem 0 1.5rem 0;
 	align-items: center;
 	justify-content: space-between;
 
-	background-color:#0c131011;
+	background-color:#0c1310af;
 	backdrop-filter: blur(15px);
+
+	transition: 500ms ease-in-out;
 
 	/* border: 2px solid snow;
 	border-top: 0;
@@ -20,44 +22,83 @@
     
 }
 
-.headerContainer .logo {
-	width: 4rem;
-	margin-left: 5rem;
-	margin-top: 0px;
+.headerContainer:hover #logo{
+	padding: 0.25em 3em;
+	margin-left: 1em;
+
 }
 
 #logo {
-	/* backdrop-filter: blur(15px); */
+	transition: 300ms ease-in-out;
+}
+
+.headerContainer:hover {
+	padding: 0rem 0 0rem 0;
+}
+
+.headerContainer .logo{
+	width: 0; 
+	aspect-ratio: 1 / 1;
+	height: 100%;
+	padding-top: 0.25em;
+
+	transition: 300ms ease-in-out;
+}
+
+.headerContainer:hover .logo {
+	width: 4rem;
+	margin-left: 5rem;
+	margin-top: 1em;
+
+	cursor: pointer;
 
 }
 
-#logoName {
-	display: table-cell;
-	vertical-align: middle;
+.headerContainer #logoName{
+	font-weight: 900;
+	font-size: 1.25rem;
+	margin-left: 3em;
 
-	font-size: 1rem;
-
-	padding: 0 1rem;
+	transition: 300ms ease-in-out;
 }
+
+.headerContainer:hover #logoName {
+	float: right;
+	font-size: 0;
+
+}
+
 
 .headerContainer pages {
 	margin-left: 10rem;
-	margin-right: 10rem;
+	padding-right: 100em;
 }
 
 	
 
 .headerContainer #redirect {
+	/* margin-right: 4rem; */
 	display: inline-block;
-	
-	margin-right: 4rem;
-}
-
-.headerContainer a {
 	text-decoration: none;
 	color: white;
+	padding: 0em 3em;
 
+
+	
 	font-size: inherit;
+	
+	transition: 125ms ease-in-out;
+}
+
+.headerContainer:hover #redirect {
+	padding: 3em 3em;
+	margin-right: 0;
+}
+
+#redirect:hover {
+	/* color: #000; */
+	background-color: #000;
+	border-bottom: 2px solid lightgreen;
 }
 
 button {
