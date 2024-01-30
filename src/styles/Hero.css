@@ -2,17 +2,15 @@
 #hero {
     width: 80%;
     margin: 0 auto;
-    margin-top: 3rem;
-    padding: 12rem;
+    padding: 10rem;
     padding-bottom: 0;
     z-index: -1;
 
-    background-image: url(../assets/sample4.jpeg);
-    translate: 0 -15%;
+    background-image: url(../assets/3dprinter.webp);
 
     background-color: rgba(0, 10, 2, 0.87);
     background-blend-mode:overlay;
-    box-shadow: 0 0 8em 10em #0e0e13 inset;
+    box-shadow: 0 0 8em 8em #0e0e13 inset;
 }
 
 #desc {
