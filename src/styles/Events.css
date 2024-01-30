@@ -105,3 +105,8 @@
 	margin: auto;
 	height: 2rem;
 }
+
+#redirectSVG {
+	height: 12px;
+	margin: auto 0px auto 8px;
+}
