@@ -8,7 +8,7 @@ import sample1 from '../assets/sample1.jpg';
 import sample2 from '../assets/sample2.jpg';
 import sample3 from '../assets/sample3.jpg';
 import sample4 from '../assets/sample4.jpeg';
-import redirect from '../assets/arrow-up-right-from-square-solid.svg';
+import redirect from '../assets/svg/arrow-up-right-from-square-solid.svg';
 
 const eventDetails = [
 	{
