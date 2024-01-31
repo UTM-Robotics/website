@@ -66,9 +66,9 @@
 }
 
 
-.headerContainer pages {
+.headerContainer #pages {
 	margin-left: 10rem;
-	padding-right: 100em;
+	padding-right: 10em;
 }
 
 	
