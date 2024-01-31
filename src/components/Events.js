@@ -18,13 +18,18 @@ const Events = () => {
 			{EVENTS.map(event => (
 				<div class='grid'>
 					<div className='card'>
-						<div id='details'>
-							<h1 className='eventTitle'>{event.name}</h1>
-							<p className='eventTag'>{event.tag}</p>
-							<p className='eventDesc'>{event.description}</p>
-							<p className='eventHost'><b>Hosted by: </b>{event.host}</p>
-							<p>{event.date}</p>
-							<button className='eventLink' onClick={() => window.open(event.url)}>{`View Details`}<img id='redirectSVG' src={redirect}></img></button>
+						<div id='body'>
+							<div id='cardface'>
+								<img src={event.image} style={{width: '100%'}}></img>
+							</div>
+							<div id='details'>
+								<h1 className='eventTitle'>{event.name}</h1>
+								<p className='eventTag'>{event.tag}</p>
+								<p className='eventDesc'>{event.description}</p>
+								<p className='eventHost'><b>Hosted by: </b>{event.host}</p>
+								<p>{event.date}</p>
+								<button className='eventLink' onClick={() => window.open(event.url)}>{`View Details`}<img id='redirectSVG' src={redirect}></img></button>
+							</div>
 						</div>
 					</div>
 				</div>
