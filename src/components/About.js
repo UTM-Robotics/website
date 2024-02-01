@@ -1,24 +1,12 @@
 import React, { useEffect } from 'react';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+
 import Header from './Header';
 import Blurb from './Blurb';
 
 import "../styles/About.css"
-
 import teamPhoto from '../assets/member_photos/team_photo.jpg'
 import { MEMBERS } from './details/teamDetails';
-
-import Blurb from './Blurb';
-
-const GoalCell = ({ title, description }) => (
-	<div className="goalCell">
-		<h3 className="goalTitle">{title}</h3>
-		<p className="goalDescription">{description}</p>
-	</div>
-);
-
-
-
-
 
 const About = () => {
 	// Fade in and up.
@@ -30,20 +18,31 @@ const About = () => {
 	return (
 		<div>
 			<Header/>
-			<div className='content'></div>
 			<div className="aboutContainer">
-				<img src={teamPhoto} alt="Robotics Team"></img>
+				<img src={teamPhoto} alt="Robotics Team"/>
+
 				<Blurb/>
 
-				<div id="teamDiv">
-					<h1 className='ul'>Meet the Team</h1>
+				<div className="team-section-container">
+					<h1 className='meet-the-team'>Meet the Team</h1>
 
-					<div id="teamContainer">
+					<div className="teamContainer">
 						{MEMBERS.map((member) => (
 							<div key={member.id} className="teamMember">
 								<img src={member.image} alt={member.name}/>
 								<div className="desc">
-									<h3 className="name">{member.name}</h3>
+									<div className="title">
+										<h3 className="name">{member.name}</h3>
+										<div className="social-icons">
+											<a href={`${member.linkedin}`} target="_blank" rel="noopener noreferrer">
+												<FaLinkedin className="linkedin-icon" />
+											</a>
+			
+											<a href={`${member.github}`} target="_blank" rel="noopener noreferrer">
+												<FaGithub className="github-icon"/>
+											</a>
+										</div>
+									</div>
 									<p className="role">{member.role}</p>
 									<p className="bio">{member.bio}</p>
 								</div>
