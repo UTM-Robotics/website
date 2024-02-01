@@ -1,4 +1,3 @@
-
 #blurb {
     margin: 5rem 1rem;
     padding: 0;
@@ -27,19 +26,20 @@
     font-size: 35px;
 }
 
-#aboutusDiv {
+.aboutUs {
     display: flex;
-    margin: 20vh 0 0 80px;
-    margin: 0;
     padding: 0;
+
+    margin-left: 75px;
+    margin-top: 120px;
 }
 
-#aboutusDiv p {
-    margin-left: 14.7%;
+.aboutUs p {
+    margin-left: 15%;
     font-size: 18px;
 }
 
-#goalsDiv {
+.goals {
     margin: 25vh 80px 0 80px;
     display: flex;
 }

@@ -5,8 +5,9 @@
 
 #teamDiv h1 {
     display: block;
-    margin-top: 150px;
+    margin-top: 200px;
 	margin-bottom: 75px;
+    text-align: center;
 }
 
 #teamContainer {

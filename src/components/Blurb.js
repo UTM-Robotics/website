@@ -11,12 +11,12 @@ const GoalCell = ({ title, description }) => (
 const Blurb = () => {
     return (
         <div id="blurb">
-            <div id="aboutusDiv">
+            <div class="aboutUs">
 				<h2>About Us</h2>
 				<p>UTM's home for robotics enthusiasts, hobbyists, and newcomers alike!</p>
 			</div>
 
-			<div id="goalsDiv">
+			<div class="goals">
 				<h2>Our Goals</h2>
 
 				<div id="goalGrid">

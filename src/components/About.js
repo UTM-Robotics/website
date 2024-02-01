@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 import Header from './Header';
+import Blurb from './Blurb';
 
 import "../styles/About.css"
 
@@ -12,14 +13,6 @@ import ido from '../assets/Ido.jpg'
 import max from '../assets/Max.JPG'
 import razeen from '../assets/Razeen.JPG'
 import travis from '../assets/Travis.jpeg'
-import Blurb from './Blurb';
-
-const GoalCell = ({ title, description }) => (
-	<div className="goalCell">
-		<h3 className="goalTitle">{title}</h3>
-		<p className="goalDescription">{description}</p>
-	</div>
-);
 
 const teamMembers = [
 	{
