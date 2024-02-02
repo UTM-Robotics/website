@@ -1,5 +1,5 @@
 .footerContainer {
-	background-color: transparent;
+	/* background-color: lime; */
 	color: white;
 	position: relative; 
 	width: 100%;
@@ -11,21 +11,34 @@
 	align-items: center;
 	justify-content: space-between;
 }
-  
-.copyright {
-	margin: 0;
-	margin-left: 20px;
+
+.footerContainer *{
+	padding: 0.25em 6px;
+
 }
+
+.copyright, .socials {
+	margin: 12px 4em;
+}
+
+.copyright {
+	margin-bottom: 18px;
+}
+  
   
 .socials {
 	display: flex;
 	justify-content: space-around;
-	margin-right: 20px;
 }
   
 .socials a {
 	color: white;
 	text-decoration: none;
 	margin-left: 20px;
+}
+
+.socials img {
+	margin: auto;
+	height: 1.5rem;
 }
   

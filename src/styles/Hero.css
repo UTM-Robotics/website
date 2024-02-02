@@ -1,0 +1,29 @@
+
+#hero {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10rem;
+    padding-bottom: 0;
+    z-index: -1;
+
+    background-image: url(../assets/3dprinter.webp);
+
+    background-color: rgba(0, 10, 2, 0.87);
+    background-blend-mode:overlay;
+    box-shadow: 0 0 8em 8em #0e0e13 inset;
+}
+
+#desc {
+	margin-left: 0px;
+    padding: 2rem 2rem;
+
+}
+
+#desc h1 {
+	font-size: 3rem;
+}
+
+#desc p {
+	font-size: 23px;
+	margin-right: 60%;
+}

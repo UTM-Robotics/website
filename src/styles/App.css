@@ -1,9 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Inter:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap'); */
+/* ---COLOURS--- */
 
-h1 {
-	font-family: 'Anonymous Pro', monospace;
+:root {
+    --text: #fffafa
+    --body: #01b3e5
+    --accent-light: #02c1c2
+    --accent-light2: #73dbd4
+    --accent-dark: #024ca2
+    --accent-dark2: #003366
+	--black: #00000
 }
 
 p, a, h2, h3, #redirect {
 	font-family: 'Inter', sans-serif;
+}
+/* --- FONTS --- */
+@font-face {
+	font-family: "Kanit";
+	src: url(../assets/fonts/Kanit/Kanit-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Kanit Light";
+    src: url(../assets/fonts/Kanit/Kanit-Light.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "Kanit Thin";
+	src: url(../assets/fonts/Kanit/Kanit-Thin.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+	font-family: "Syne";
+	src: url(../assets/fonts/Syne/static/Syne-Regular.ttf);
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Syne';
+}
+
+p, a, #redirect {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.ul{
+	text-decoration: underline;
+	text-decoration-color: rgb(54, 92, 74);
+}
+
+span {
+	font-family: "Quicksand";
 }
