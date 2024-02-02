@@ -11,13 +11,14 @@ import "../styles/Home.css"
 const Home = () => {
 	// Fade in and up.
 	useEffect(() => {
-		const mainContainer = document.querySelector('.homeContainer');
+		const mainContainer = document.querySelector('#main');
 		mainContainer.classList.add('fade-in-up');
 	}, []);
 
 	return (
 		<div>
-
+			
+		{/* <StarryNight/> */}
 		<Header/>
 
 		<div id="main">

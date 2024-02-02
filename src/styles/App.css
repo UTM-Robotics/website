@@ -52,3 +52,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Syne';
 }
+
+p, a, #redirect {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.ul{
+	text-decoration: underline;
+	text-decoration-color: rgb(54, 92, 74);
+}
+
+span {
+	font-family: "Quicksand";
+}
