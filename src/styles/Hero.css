@@ -1,0 +1,29 @@
+
+#hero {
+    margin-top: 8rem;
+    padding-bottom: 8rem;
+
+    background-image: url(../assets/sample2.jpg);
+    background-color: rgba(0, 0, 0, 0.788);
+    background-blend-mode: overlay;
+    box-shadow: 0 0 3rem 2rem #0e0e13 inset;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+#desc {
+	margin-left: 0px;
+    padding: 8rem 2rem;
+
+}
+
+#desc h2 {
+	font-size: 40px;
+}
+
+#desc p {
+	font-size: 23px;
+	margin-right: 60%;
+}

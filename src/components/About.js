@@ -120,9 +120,9 @@ const About = () => {
 
 	return (
 		<div>
-			<StarryNight/>
+			{/* <StarryNight/> */}
 			<Header/>
-
+			<div className='content'></div>
 			<div className="aboutContainer">
 				<img src={teamPhoto} alt="Robotics Team"></img>
 

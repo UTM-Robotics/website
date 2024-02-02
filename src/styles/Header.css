@@ -7,7 +7,7 @@
 
 
 	display: flex;
-	padding: 2.5em 0 0.5em 0;
+	padding: 0.5rem 0 0.5rem 0;
 	align-items: center;
 	justify-content: space-between;
 
@@ -21,9 +21,21 @@
 }
 
 .headerContainer .logo {
-	width: 6%;
-	margin-left: 10px;
+	width: 4rem;
+	margin-left: 5rem;
 	margin-top: 0px;
+}
+
+#logo {
+}
+
+#logoName {
+	display: table-cell;
+	vertical-align: middle;
+
+	font-size: 1rem;
+
+	padding: 0 1rem;
 }
 
 .headerContainer pages {
@@ -31,10 +43,12 @@
 	margin-right: 10rem;
 }
 
+	
+
 .headerContainer #redirect {
 	display: inline-block;
 	
-	margin-right: 30px;
+	margin-right: 4rem;
 }
 
 .headerContainer a {

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 
 import StarryNight from './backgrounds/StarryNight'
 import Header from './Header'
+import Hero from './Hero'
 import Events from './Events'
 import Footer from './Footer'
 
@@ -20,15 +21,9 @@ const Home = () => {
 		<StarryNight/>
 		<Header/>
 
-		<div className='homeContainer'>
-
-			<h1 id="title">UTM ROBOTICS</h1>
+		<div id="main">
 			
-			<div id="desc">
-				<h2>Welcome to UTM Robotics.</h2>
-
-				<p>We host robotic workshops and casual meetups.<br/>Check out our Instagram!</p>
-			</div>
+			<Hero/>
 
 			<Events id="#events"/>
 
