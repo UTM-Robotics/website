@@ -22,6 +22,7 @@ const Events = () => {
 							<div id='cardface'>
 								<img src={event.image} style={{width: '100%'}}></img>
 							</div>
+							<div id='cardback'>
 							<div id='details'>
 								<h1 className='eventTitle'>{event.name}</h1>
 								<p className='eventTag'>{event.tag}</p>
@@ -29,6 +30,7 @@ const Events = () => {
 								<p className='eventHost'><b>Hosted by: </b>{event.host}</p>
 								<p>{event.date}</p>
 								<button className='eventLink' onClick={() => window.open(event.url)}>{`View Details`}<img id='redirectSVG' src={redirect}></img></button>
+							</div>
 							</div>
 						</div>
 					</div>

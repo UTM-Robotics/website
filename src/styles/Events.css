@@ -38,50 +38,65 @@
 
 #events .card {
 	
-	background-color: #0e0e13;
 	border-radius: 36px;
 
 	margin: 0.5rem 1rem;
 	padding: 3em 0.5em;
 
-	perspective: 1000px;
+	perspective: 50em;
 
 	/* padding-bottom: 3rem; */
 	/* height: 100%; */
 }
 
-#events .card:hover #body {
+.card:hover #body {
 	transform: rotateY(180deg);
 }
 
 #events .card #body {
 	position: relative;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
-	text-align: center;
+	/* padding: 1em; */
+	/* text-align: center; */
 	transition: transform 0.8s;
 	transform-style: preserve-3d;
-}
-
-#face, #details {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	-webkit-backface-visibility: hidden; /* Safari */
 	backface-visibility: hidden;
 }
 
-#events .card #details {
-	padding: 1rem;
-	padding-left: 2rem;
-	padding-top: 0.5px;
+#cardface img {
+	aspect-ratio: 1 / 1;
+	height: max-content;
+}
 
-	height: 20em;
+#events .card #cardback {
+	/* padding: 1rem;
+	padding-top: 0.5px; */
 	overflow: hidden;
-	/* text-align: center; */
 	color: snow;
 
+	width: 100%;
+	margin: auto;
+
 	transform: rotateY(180deg);
+	position: absolute;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	/* aspect-ratio: 1 / 1; */
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+
+	background-color: #0e0e13;
+}
+
+#cardback #details{
+	padding: 2rem;
+	padding-top: 2em;
 }
 
 .eventTitle {

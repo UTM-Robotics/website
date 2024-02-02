@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 import Header from './Header';
+import Footer from './Footer'
 import Blurb from './Blurb';
 
 import "../styles/About.css"
@@ -51,6 +52,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
+			<Footer/>
 		</div>
 	);
 };
