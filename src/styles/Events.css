@@ -66,9 +66,28 @@
 	backface-visibility: hidden;
 }
 
+#detailContainer {
+	margin: 0;
+}
+
 #cardface img {
-	aspect-ratio: 1 / 1;
+	aspect-ratio: 9 / 10;
 	height: max-content;
+	height: 100%;
+	margin: 0;
+}
+
+#cardface #dateTime, #cardface #title {
+	display: inline-block;
+	height: 100%;
+	padding: 1em;
+	margin: auto;
+
+	text-align: center;
+}
+
+#cardface #dateTime {
+	background-color: whitesmoke;
 }
 
 #events .card #cardback {
@@ -87,7 +106,7 @@
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	/* aspect-ratio: 1 / 1; */
+
 	-webkit-backface-visibility: hidden; /* Safari */
 	backface-visibility: hidden;
 

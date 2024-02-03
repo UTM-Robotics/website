@@ -21,6 +21,10 @@ const Events = () => {
 						<div id='body'>
 							<div id='cardface'>
 								<img src={event.image} style={{width: '100%'}}></img>
+								<div id='detailContainer'>
+									<span id='dateTime'>{event.date}<br></br>{event.startTime}</span>
+									<span id='title'>{event.name}</span>
+								</div>
 							</div>
 							<div id='cardback'>
 							<div id='details'>

@@ -12,6 +12,7 @@ const eventDetails = [
 		description: "This is a battle bot. They battle. They bot.",
 		host: "Jerma",
 		date: "Feb 14th 2023",
+		startTime: "8:00 AM",
 		url: `https://github.com/omnipotentsock`
 	},
 	{
@@ -22,6 +23,7 @@ const eventDetails = [
 		description: "The floor is not lava, but you can change that!",
 		host: "Jerma",
 		date: "Feb 14th 2023",
+		startTime: "8:00 AM",
 		url: `https://github.com/omnipotentsock`
 	},
 	{
@@ -32,6 +34,7 @@ const eventDetails = [
 		description: "They literally got that DAWG in them fr.",
 		host: "Jerma",
 		date: "Feb 14th 2023",
+		startTime: "8:00 AM",
 		url: `https://github.com/omnipotentsock`
 	},
 	{
@@ -42,6 +45,7 @@ const eventDetails = [
 		description: "Come with us to make a full hydrogen atomic bomb in 17 minutes! Ask PETA. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		host: "Jerma",
 		date: "Feb 14th 2023",
+		startTime: "8:00 AM",
 		url: `https://github.com/omnipotentsock`
 	}
 ]
