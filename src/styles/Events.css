@@ -38,8 +38,6 @@
 
 #events .card {
 	
-	border-radius: 36px;
-
 	margin: 0.5rem 1rem;
 	padding: 3em 0.5em;
 
@@ -66,28 +64,54 @@
 	backface-visibility: hidden;
 }
 
+#cardface, #cardback{
+	border: 0px solid black;
+	border-radius: 18px;
+	overflow: hidden;
+}
+
 #detailContainer {
+	display: flex;
+	height: 100%;
+	margin: 0;
+}
+
+#cardface {
+	background-color: white;
 	margin: 0;
 }
 
 #cardface img {
-	aspect-ratio: 9 / 10;
+	display: block;
+	aspect-ratio: 1.1 / 1;
 	height: max-content;
 	height: 100%;
-	margin: 0;
 }
 
 #cardface #dateTime, #cardface #title {
-	display: inline-block;
-	height: 100%;
+	margin: 0;
 	padding: 1em;
-	margin: auto;
 
 	text-align: center;
 }
 
 #cardface #dateTime {
-	background-color: whitesmoke;
+	font-family: 'Syne';
+	font-size: 0.83rem;
+	background-color: lightgreen;
+	color: black;
+	width: calc(20% - 2em);
+
+}
+
+#cardface #title {
+	font-family: 'Syne';
+	font-size: 1.1rem;
+	color: #000;
+	background-color: snow;
+	width: calc(80% - 2em);
+	text-align: left;
+
 }
 
 #events .card #cardback {
@@ -123,12 +147,13 @@
 }
 
 .eventDesc {
+	display: block;
 
 	padding: 0 5px;
 	overflow-wrap: word-break;
 	overflow-y: auto;
 	overflow-x: hidden;
-	height: 7em;
+	height: 5em;
 }
 
 .eventTag{
