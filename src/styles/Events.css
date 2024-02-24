@@ -72,7 +72,7 @@
 
 #detailContainer {
 	display: flex;
-	height: 100%;
+	height: 4.75rem;
 	margin: 0;
 }
 
@@ -89,6 +89,9 @@
 }
 
 #cardface #dateTime, #cardface #title {
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
 	margin: 0;
 	padding: 1em;
 
@@ -100,7 +103,8 @@
 	font-size: 0.83rem;
 	background-color: lightgreen;
 	color: black;
-	width: calc(20% - 2em);
+	width: calc(30% - 2rem);
+	padding: 1.25rem 1rem;
 
 }
 
@@ -109,10 +113,21 @@
 	font-size: 1.1rem;
 	color: #000;
 	background-color: snow;
-	width: calc(80% - 2em);
+	width: calc(70% - 2em);
 	text-align: left;
 
 }
+
+@media screen and (max-width: 1500px) {
+	html {
+		font-size: 13px;
+	}
+
+	#detailContainer {
+		height: 6rem;
+	}
+}
+
 
 #events .card #cardback {
 	/* padding: 1rem;
@@ -181,7 +196,6 @@
 	margin: 8px 0;
 	padding: 5px 12px;
 	width: fit-content;
-	/* float: right; */
 
 	border: 0.5px solid lightgreen;
 	border-radius: 2em;
