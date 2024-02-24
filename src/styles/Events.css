@@ -72,7 +72,7 @@
 
 #detailContainer {
 	display: flex;
-	height: 4.75rem;
+	height: 4.75em;
 	margin: 0;
 }
 
@@ -100,11 +100,13 @@
 
 #cardface #dateTime {
 	font-family: 'Syne';
-	font-size: 0.83rem;
+	font-size: 0.9rem;
 	background-color: lightgreen;
 	color: black;
-	width: calc(30% - 2rem);
+	width: calc(30% - 2em);
 	padding: 1.25rem 1rem;
+	padding-bottom: 1000rem;
+	font-weight: 900;
 
 }
 
@@ -115,16 +117,21 @@
 	background-color: snow;
 	width: calc(70% - 2em);
 	text-align: left;
+	padding-bottom: 100rem;
 
 }
 
 @media screen and (max-width: 1500px) {
 	html {
-		font-size: 13px;
+		font-size: 12px;
 	}
 
 	#detailContainer {
-		height: 6rem;
+		height: 5rem;
+	}
+
+	#cardface #dateTime, #cardface #title {
+		padding-top: 1rem;
 	}
 }
 
