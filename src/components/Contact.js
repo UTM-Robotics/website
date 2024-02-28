@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
-
 import Header from './Header';
 import Footer from './Footer';
-
 import '../styles/Contact.css';
 
 const Contact = () => {
@@ -13,32 +11,26 @@ const Contact = () => {
   }, []);
 
   const [formData, setFormData] = useState({
-    email: '',
     name: '',
-    subject: '',
+    email: '',
     message: ''
   });
 
-  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      e.target,
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-    ).then((result) => {
-      setFormData({
-        email: '',
-        name: '',
-        subject: '',
-        message: ''
+
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+      .then((result) => {
+        alert("Thanks for contacting us! We'll be in touch within 1-2 business days.");
+      }, (error) => {
+        alert("Oops, the email couldn't send! Try again tomorrow, or email us with our email instead.");
       });
-      console.log(result.text);
-    }).catch((error) => {
-      console.log(error.text);
-    });
+
+    setFormData({ name: '', email: '', message: '' });
   };
 
   return (
@@ -46,10 +38,11 @@ const Contact = () => {
       <Header />
 
       <div className='contactContainer'>
-        <h2 id='title'>Email us directly, or contact us using the form anonymously!</h2>
+        <h2>Email us directly, or contact us using the form anonymously!</h2>
 
         <div className='info'>
           <div className='contactInfo'>
+
             <h2>Email</h2>
             <p>robotics@utmsu.ca</p>
 
@@ -57,11 +50,11 @@ const Contact = () => {
             <p>???</p>
           </div>
 
-          <form className='contactForm' onSubmit={sendEmail}>
+          <form className='contactForm' onSubmit={handleSubmit}>
             <label>
               Name:
               <input
-                type="text"
+                type="name"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
@@ -96,6 +89,6 @@ const Contact = () => {
       <Footer />
     </div>
   );
-};
+}
 
 export default Contact;
