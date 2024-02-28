@@ -1,7 +1,7 @@
 #blurb {
     margin: 5rem 1rem;
     padding: 0;
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -19,25 +19,30 @@
 
 .aboutContainer img {
     display: block;
-    width: 90%;
+    width: 70%;
+    /* height: 40rem; */
+    aspect-ratio: 2 / 1;
     margin: 15vh auto 0;
 }
 
 .aboutContainer h2 {
     margin: 0;
-    font-size: 35px;
+    font-size: 3rem;
+    width: 15%;
+    margin-right: 2em;
 }
 
 .aboutUs {
     display: flex;
-    padding: 0;
+    flex-flow: column;
 
-    margin-left: 75px;
+    /* margin-left: 75px; */
     margin-top: 120px;
+    margin-bottom: 5rem;
 }
 
 .aboutUs p {
-    margin-left: 15%;
+    margin-left: 20%;
     font-size: 18px;
 }
 
