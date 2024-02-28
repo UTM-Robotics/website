@@ -11,32 +11,11 @@
 
 .homeContainer {
 	background-color: rgba(0, 0, 0, 0);
-	margin-left: 100px;
-	margin-right: 100px;
-}
-
-h1 {
-	font-size: 50px;
-	text-align: center;
-	margin-top: 25vh;
-}
-
-#desc {
-	margin-top: 200px;
-	margin-left: 0px;
-}
-
-#desc h2 {
-	font-size: 40px;
-}
-
-#desc p {
-	font-size: 23px;
-	margin-right: 60%;
+	width: 100vw;
 }
 
 body {
-	background-color: black; /* Change the background color to black */
+	background-color: #0e0e13; /* Change the background color to black */
 	color: white;
-	padding: 10px;
+	/* padding: 10px; */
 }

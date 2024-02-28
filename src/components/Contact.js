@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import StarryNight from './backgrounds/StarryNight'
 import Header from './Header'
 import Footer from './Footer'
 
@@ -37,11 +36,10 @@ const Contact = () => {
 	
 	return (
 		<div>
-			<StarryNight/>
 			<Header/>
 
 			<div className='contactContainer'>
-				<h2>Email us directly, or contact us using the form anonymously!</h2>
+				<h2 id='title'>Email us directly, or contact us using the form anonymously!</h2>
 
 				<div className='info'>
 					<div className='contactInfo'>
