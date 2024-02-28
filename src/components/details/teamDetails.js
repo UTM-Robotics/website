@@ -80,9 +80,9 @@ const teamDetails = [
 	},
 	{
 		id: 7,
-		name: 'Ayman',
+		name: 'Ayman Mohammed',
 		role: 'Graphics',
-		bio: 'Hello hello, my name is Ayman, and I like to design and code! (or both, when it comes to frontend)',
+		bio: 'Hello hello, my name is Ayman, and  I code, draw, sleep excessively, and joke ecstatically. Always looking to take part in open-source projects, so reach out on Discord! (@adoopted)',
 		linkedin: '',
 		github: ''
 	},

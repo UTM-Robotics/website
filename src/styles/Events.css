@@ -47,7 +47,7 @@
 	/* height: 100%; */
 }
 
-.card:hover #body {
+.card:hover #body, .card:active {
 	transform: rotateY(180deg);
 }
 
@@ -77,7 +77,7 @@
 }
 
 #cardface {
-	background-color: white;
+	background-color: #111;
 	margin: 0;
 }
 
@@ -113,8 +113,8 @@
 #cardface #title {
 	font-family: 'Syne';
 	font-size: 1.1rem;
-	color: #000;
-	background-color: snow;
+	color: snow;
+	background-color: #111;
 	width: calc(70% - 2em);
 	text-align: left;
 	padding-bottom: 100rem;
@@ -156,9 +156,8 @@
 	-webkit-backface-visibility: hidden; /* Safari */
 	backface-visibility: hidden;
 
-	background-color: #0e0e13;
+	background-color: #111;
 }
-
 #cardback #details{
 	padding: 2rem;
 	padding-top: 2em;
