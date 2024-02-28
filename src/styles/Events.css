@@ -113,8 +113,8 @@
 #cardface #title {
 	font-family: 'Syne';
 	font-size: 1.1rem;
-	color: snow;
-	background-color: #111;
+	color: #111;
+	background-color: snow;
 	width: calc(70% - 2em);
 	text-align: left;
 	padding-bottom: 100rem;
