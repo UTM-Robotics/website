@@ -6,7 +6,7 @@ import Footer from './Footer'
 import Blurb from './Blurb';
 
 import "../styles/About.css"
-import teamPhoto from '../assets/member_photos/team_photo.jpg'
+import teamPhoto from '../assets/member_photos/teamPhoto.jpg'
 import { MEMBERS } from './details/teamDetails';
 
 const About = () => {

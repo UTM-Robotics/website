@@ -1,14 +1,14 @@
 
-import aaron from '../../assets/member_photos/Aaron.JPG'
-import alex from '../../assets/member_photos/Alex.JPG'
-import usha from '../../assets/member_photos/Usha.JPG'
-import ayman from '../../assets/member_photos/Ayman.JPG'
-import ido from '../../assets/member_photos/Ido.JPG'
-import max from '../../assets/member_photos/Max.JPG'
-import razeen from '../../assets/member_photos/Razeen.JPG'
-import travis from '../../assets/member_photos/Travis.JPG'
-import prottoy from '../../assets/member_photos/Prottoy.JPG'
-import none from '../../assets/member_photos/none.png'
+import aaron from '../../assets/memberPhotos/Aaron.JPG'
+import alex from '../../assets/memberPhotos/Alex.JPG'
+import usha from '../../assets/memberPhotos/Usha.JPG'
+import ayman from '../../assets/memberPhotos/Ayman.JPG'
+import ido from '../../assets/memberPhotos/Ido.JPG'
+import max from '../../assets/memberPhotos/Max.JPG'
+import razeen from '../../assets/memberPhotos/Razeen.JPG'
+import travis from '../../assets/memberPhotos/Travis.JPG'
+import prottoy from '../../assets/memberPhotos/Prottoy.JPG'
+import none from '../../assets/memberPhotos/none.png'
 
 const teamDetails = [
 	{
@@ -104,6 +104,7 @@ const teamDetails = [
 	{
 		id: 11,
 		name: 'Prottoy',
+		role: 'Events',
 		bio: 'I have never once lost a game of thumb wars.',
 		image: prottoy,
 		linkedin: '',
