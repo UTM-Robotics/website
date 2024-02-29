@@ -1,11 +1,14 @@
 
-import aaron from '../../assets/member_photos/Aaron.jpeg'
-import alex from '../../assets/member_photos/Alex.jpg'
-import damon from '../../assets/member_photos/Damon.JPG'
-import ido from '../../assets/member_photos/Ido.jpg'
+import aaron from '../../assets/member_photos/Aaron.JPG'
+import alex from '../../assets/member_photos/Alex.JPG'
+import usha from '../../assets/member_photos/Usha.JPG'
+import ayman from '../../assets/member_photos/Ayman.JPG'
+import ido from '../../assets/member_photos/Ido.JPG'
 import max from '../../assets/member_photos/Max.JPG'
 import razeen from '../../assets/member_photos/Razeen.JPG'
-import travis from '../../assets/member_photos/Travis.jpeg'
+import travis from '../../assets/member_photos/Travis.JPG'
+import prottoy from '../../assets/member_photos/Prottoy.JPG'
+import none from '../../assets/member_photos/none.png'
 
 const teamDetails = [
 	{
@@ -22,6 +25,7 @@ const teamDetails = [
 		name: 'Usha',
 		role: 'Exec Communication',
 		bio: 'I\'ve lived in six countries.',
+		image: usha,
 		linkedin: 'https://www.linkedin.com/in/ushasj/',
 		github: ''
 	},
@@ -66,7 +70,7 @@ const teamDetails = [
 		name: 'Damon',
 		role: 'Tech',
 		bio: '',
-		image: damon,
+		image: none,
 		linkedin: '',
 		github: ''
 	},
@@ -75,6 +79,7 @@ const teamDetails = [
 		name: 'Yajan',
 		role: 'Tech',
 		bio: 'Music (Played Drums for 5yrs), Programming/Engineering, JiuJitsu/Muay Thai',
+		image: none,
 		linkedin: '',
 		github: ''
 	},
@@ -83,6 +88,7 @@ const teamDetails = [
 		name: 'Ayman Mohammed',
 		role: 'Graphics',
 		bio: 'Hello hello, my name is Ayman, and  I code, draw, sleep excessively, and joke ecstatically. Always looking to take part in open-source projects, so reach out on Discord! (@adoopted)',
+		image: ayman,
 		linkedin: '',
 		github: ''
 	},
@@ -97,25 +103,36 @@ const teamDetails = [
 	},
 	{
 		id: 11,
-		name: 'Daksh',
-		role: 'Mentor',
-		bio: '',
+		name: 'Prottoy',
+		bio: 'I have never once lost a game of thumb wars.',
+		image: prottoy,
 		linkedin: '',
 		github: ''
 	},
 	{
 		id: 12,
-		name: 'Hamza',
+		name: 'Daksh',
 		role: 'Mentor',
-		bio: 'I love talking about all sorts of fun and interesting topics, so feel free to reach out to me @hamza.pp on discord to chat!',
+		bio: '',
+		image: none,
 		linkedin: '',
 		github: ''
 	},
 	{
 		id: 13,
+		name: 'Hamza',
+		role: 'Mentor',
+		bio: 'I love talking about all sorts of fun and interesting topics, so feel free to reach out to me @hamza.pp on discord to chat!',
+		image: none,
+		linkedin: '',
+		github: ''
+	},
+	{
+		id: 14,
 		name: 'Sammy',
 		role: 'Mentor',
 		bio: 'I love low-level development and tinkering around with hardware, and I also love languages, both natural and programming. Feel free to say hi!',
+		image: none,
 		linkedin: '',
 		github: ''
 	}
