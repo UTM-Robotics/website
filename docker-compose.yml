@@ -1,7 +1,6 @@
 version: "3"
 services:
-  utm_cssc:
-    container_name: website
+  website:
     build:
       dockerfile: Dockerfile
     ports:
