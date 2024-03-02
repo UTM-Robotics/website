@@ -6,7 +6,7 @@ import Footer from './Footer'
 import Blurb from './Blurb';
 
 import "../styles/About.css"
-import teamPhoto from '../assets/member_photos/teamPhoto.jpg'
+// import teamPhoto from '../assets/member_photos/teamPhoto.jpg'
 import { MEMBERS } from './details/teamDetails';
 
 const About = () => {
@@ -20,7 +20,7 @@ const About = () => {
 		<div>
 			<Header/>
 			<div className="aboutContainer">
-				<img src={teamPhoto} alt="Robotics Team"/>
+				{/*<img src={teamPhoto} alt="Robotics Team"/>*/}
 
 				<Blurb/>
 
