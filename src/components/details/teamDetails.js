@@ -27,7 +27,7 @@ const teamDetails = [
 		bio: 'I\'ve lived in six countries.',
 		image: usha,
 		linkedin: 'https://www.linkedin.com/in/ushasj/',
-		github: ''
+		github: 'https://github.com/usha-sj/'
 	},
 	{
 		id: 3,
@@ -36,7 +36,7 @@ const teamDetails = [
 		bio: '3rd year CS and Math student. I enjoy working on robotics, automation and Software Dev.',
 		image: razeen,
 		linkedin: 'https://www.linkedin.com/in/razeenali/',
-		github: ''
+		github: 'https://github.com/r4z33n4l1'
 	},
 	{
 		id: 4,
@@ -45,7 +45,7 @@ const teamDetails = [
 		bio: 'Hi! My name is Travis, a fifth year CS Spec. I\'ll be your finance exec this remaining semester.',
 		image: travis,
 		linkedin: 'https://www.linkedin.com/in/travis-shao-442620173/',
-		github: ''
+		github: 'https://github.com/FourFourSquareSquare'
 	},
 	{
 		id: 5,
@@ -54,7 +54,7 @@ const teamDetails = [
 		bio: 'I used to have two cats',
 		image: ido,
 		linkedin: 'https://www.linkedin.com/in/idobenhaim/',
-		github: ''
+		github: 'https://github.com/ggggg'
 	},
 	{
 		id: 6,
@@ -71,8 +71,8 @@ const teamDetails = [
 		role: 'Tech',
 		bio: '',
 		image: none,
-		linkedin: '',
-		github: ''
+		linkedin: 'https://www.linkedin.com/in/damon-d-ma/',
+		github: 'https://github.com/Damon-D-Ma'
 	},
 	{
 		id: 9,
@@ -89,8 +89,8 @@ const teamDetails = [
 		role: 'Graphics',
 		bio: 'Hello hello, my name is Ayman, and  I code, draw, sleep excessively, and joke ecstatically. Always looking to take part in open-source projects, so reach out on Discord! (@adoopted)',
 		image: ayman,
-		linkedin: '',
-		github: ''
+		linkedin: 'https://github.com/omnipotentsock',
+		github: 'https://www.linkedin.com/in/ayman-ahmed-mohammed'
 	},
 	{
 		id: 10,
@@ -99,7 +99,7 @@ const teamDetails = [
 		bio: 'Always striving to be the most satisfying partner to work with, and always excited for the passionate talks with problem-solvers and dreamers, so come chat!',
 		image: aaron,
 		linkedin: 'https://www.linkedin.com/in/aaronwu000/',
-		github: ''
+		github: 'https://github.com/aaronwu001'
 	},
 	{
 		id: 11,
@@ -116,8 +116,8 @@ const teamDetails = [
 		role: 'Mentor',
 		bio: '',
 		image: none,
-		linkedin: '',
-		github: ''
+		linkedin: 'https://www.linkedin.com/in/daksh-malhotra',
+		github: 'https://github.com/DakshChan'
 	},
 	{
 		id: 13,
