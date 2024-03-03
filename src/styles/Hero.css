@@ -31,11 +31,7 @@
 @media screen and (max-width: 1200px){
 
     #hero {
-        padding: 10rem 2rem 1rem;
-    }
-
-    #desc {
-        
+        padding: 8rem 2rem 1rem;
     }
 
     #desc h1 {

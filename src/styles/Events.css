@@ -9,8 +9,7 @@
 	
 }
 #eventContainer #header {
-	margin-left: 2rem;
-	font-size: 3rem;
+	margin: 1rem 3rem;
 }
 
 #events {
@@ -226,6 +225,10 @@
 /* MOBILE VIEWPORT SETTINGS */
 
 @media screen and (max-width: 1200px) {
+
+	#eventContainer {
+		padding: 2rem 5rem;
+	}
 	#events .card #body {
 		transition: transform 300ms;}
 }
