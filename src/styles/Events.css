@@ -37,9 +37,9 @@
 
 #events .card {
 	
-	margin: 0.5rem 1rem;
+	margin: 0 auto;
 	padding: 3em 0.5em;
-	width: 90%;
+	width: 100%;
 
 	/* Perspective on the card flip */
 	perspective: 50em;
@@ -231,5 +231,6 @@
 		padding: 2rem 5rem;
 	}
 	#events .card #body {
-		transition: transform 300ms;}
+		transition: transform 300ms;
+	}
 }
