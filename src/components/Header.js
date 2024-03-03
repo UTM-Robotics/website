@@ -50,7 +50,6 @@ const Header = () => {
 			<span id='logoName'>UTM Robotics</span>
 			</div>
 			<div id='pages'>
-				<button onClick={handleHomeLinkClick} id='redirect'>Home</button>
 				<button onClick={handleEventsLinkClick} id='redirect'>Events</button>
 				<button onClick={handleAboutLinkClick} id='redirect'>About</button>
 				<button onClick={handleContactLinkClick} id='redirect'>Contact</button>
