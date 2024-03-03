@@ -80,7 +80,8 @@
 
 #cardface img {
 	display: block;
-	height: 20rem;
+	/* height: 20rem; */
+	aspect-ratio: 1/1;
 }
 
 #cardface #detailContainer {
