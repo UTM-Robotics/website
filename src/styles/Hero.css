@@ -6,10 +6,11 @@
     padding-bottom: 0;
     z-index: -1;
 
-    background-image: url(../assets/3dprinter.webp);
+    background-image: url(../assets/hero.jpg);
 
     background-color: rgba(0, 10, 2, 0.87);
-    background-blend-mode:overlay;
+    background-blend-mode: overlay;
+
     box-shadow: 0 0 8em 8em #0e0e13 inset;
 }
 
@@ -27,7 +28,7 @@
 	font-size: 1.5rem;
 }
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1200px){
 
     #hero {
         padding: 10rem 2rem 1rem;
@@ -38,11 +39,12 @@
     }
 
     #desc h1 {
-        font-size: 3rem;
+        font-size: 2.1rem;
         text-align: center;
     }
 
     #desc p {
+        font-size: 1.25rem;
         text-align: center;
     }
 }
