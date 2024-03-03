@@ -26,3 +26,23 @@
 #desc p {
 	font-size: 1.5rem;
 }
+
+@media screen and (max-width: 1500px){
+
+    #hero {
+        padding: 10rem 2rem 1rem;
+    }
+
+    #desc {
+        
+    }
+
+    #desc h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #desc p {
+        text-align: center;
+    }
+}
