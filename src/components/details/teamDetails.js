@@ -80,8 +80,8 @@ const teamDetails = [
 		role: 'Tech',
 		bio: 'Music (Played Drums for 5yrs), Programming/Engineering, JiuJitsu/Muay Thai',
 		image: none,
-		linkedin: '',
-		github: ''
+		linkedin: 'https://www.linkedin.com/in/yajansingh/',
+		github: 'https://github.com/yajan-singh'
 	},
 	{
 		id: 7,
@@ -126,7 +126,7 @@ const teamDetails = [
 		bio: 'I love talking about all sorts of fun and interesting topics, so feel free to reach out to me @hamza.pp on discord to chat!',
 		image: none,
 		linkedin: '',
-		github: ''
+		github: 'https://github.com/gondalm1'
 	},
 	{
 		id: 14,
