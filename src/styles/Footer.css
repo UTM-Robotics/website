@@ -2,7 +2,7 @@
 	/* background-color: lime; */
 	color: white;
 	position: relative; 
-	width: 100%;
+	width: 100vw;
 	height: 8%;
 	border: none;
 
@@ -18,11 +18,12 @@
 }
 
 .copyright, .socials {
-	margin: 12px 4em;
+	margin: 12px 4vw;
 }
 
 .copyright {
-	margin-bottom: 18px;
+	font-size: 0.85rem;
+	/* margin-bottom: 18px; */
 }
   
   

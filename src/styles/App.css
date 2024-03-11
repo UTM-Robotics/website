@@ -40,8 +40,12 @@ p, a, h2, h3, #redirect {
 	src: url(../assets/fonts/Syne/static/Syne-Regular.ttf);
 }
 
+html {
+	width: 100vw;
+}
+
 body {
-	width: 100%;
+	width: 100vw;
 	margin: 0 auto;
 }
 
@@ -64,4 +68,14 @@ p, a, #redirect {
 
 span, label {
 	font-family: "Quicksand";
+}
+
+@media screen and (max-width: 550px) {
+	html {
+		font-size: 12px;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		text-align: center;
+	}
 }

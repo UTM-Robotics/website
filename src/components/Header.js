@@ -45,12 +45,11 @@ const Header = () => {
 
 	return (
 		<nav className='headerContainer'>
-			<div id='logo' onClick={handleHomeLinkClick}>
-			<img className='logo' src={roboticsLogo} alt="Robotics Logo"></img>
-			<span id='logoName'>UTM Robotics</span>
+			<div id='logoContainer' onClick={handleHomeLinkClick}>
+				<img className='logo' src={roboticsLogo} alt="Robotics Logo"></img>
+				<span id='logoName'>UTM Robotics</span>
 			</div>
 			<div id='pages'>
-				<button onClick={handleHomeLinkClick} id='redirect'>Home</button>
 				<button onClick={handleEventsLinkClick} id='redirect'>Events</button>
 				<button onClick={handleAboutLinkClick} id='redirect'>About</button>
 				<button onClick={handleContactLinkClick} id='redirect'>Contact</button>

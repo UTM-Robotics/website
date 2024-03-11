@@ -15,7 +15,7 @@ const teamDetails = [
 		id: 1,
 		name: 'Max',
 		role: 'President',
-		bio: 'I am Maksym Woychyshyn, President if the robotics club at UTM! I originally became interested in robotics in high school and this has led to me studying cs robotics courses at UTM. Looking forward to the semester',
+		bio: 'I am Maksym Woychyshyn, President of the Robotics club at UTM! I originally became interested in robotics in high school, and this has led to me studying CompSci Robotics courses at UTM. Looking forward to the semester!',
 		image: max,
 		linkedin: 'https://www.linkedin.com/in/maksym-woychyshyn-a14836197/',
 		github: ''
@@ -51,7 +51,7 @@ const teamDetails = [
 		id: 5,
 		name: 'Ido',
 		role: 'Exec Coordination',
-		bio: 'I used to have two cats',
+		bio: 'I used to have two cats.',
 		image: ido,
 		linkedin: 'https://www.linkedin.com/in/idobenhaim/',
 		github: 'https://github.com/ggggg'
@@ -60,7 +60,7 @@ const teamDetails = [
 		id: 6,
 		name: 'Alex Apostolu',
 		role: 'Tech',
-		bio: 'Executive member of the UofT Bees Club',
+		bio: 'Executive member of the UofT Bees Club.',
 		image: alex,
 		linkedin: 'https://www.linkedin.com/in/apostolu/',
 		github: 'https://www.github.com/alexapostolu'
@@ -87,7 +87,7 @@ const teamDetails = [
 		id: 7,
 		name: 'Ayman Mohammed',
 		role: 'Graphics',
-		bio: 'Hello hello, my name is Ayman, and  I code, draw, sleep excessively, and joke ecstatically. Always looking to take part in open-source projects, so reach out on Discord! (@adoopted)',
+		bio: 'I code, draw, sleep excessively, and joke ecstatically. Always looking to take part in open-source projects, so reach out on Discord! (@adoopted)',
 		image: ayman,
 		linkedin: 'https://github.com/omnipotentsock',
 		github: 'https://www.linkedin.com/in/ayman-ahmed-mohammed'
