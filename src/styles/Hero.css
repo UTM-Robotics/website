@@ -2,7 +2,7 @@
 #hero {
     /* width: 80%; */
     margin: 0 auto;
-    padding: 10rem;
+    padding: 10rem 2rem;
     padding-bottom: 0;
     z-index: -1;
 
@@ -21,26 +21,18 @@
 }
 
 #desc h1 {
-	font-size: 3rem;
+	font-size: 2.125rem;
+    margin-bottom: 0.25rem;
 }
 
-#desc p {
-	font-size: 1.5rem;
-}
 
-@media screen and (max-width: 1200px){
-
-    #hero {
-        padding: 8rem 2rem 1rem;
-    }
+@media screen and (max-width: 1024px){
 
     #desc h1 {
-        font-size: 2.1rem;
         text-align: center;
     }
 
     #desc p {
-        font-size: 1.25rem;
         text-align: center;
     }
 }
