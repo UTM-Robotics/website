@@ -87,7 +87,7 @@ const teamDetails = [
 		id: 7,
 		name: 'Ayman Mohammed',
 		role: 'Graphics',
-		bio: 'I code, draw, sleep excessively, and joke ecstatically. Always looking to take part in open-source projects, so reach out on Discord! (@adoopted)',
+		bio: 'I sleep excessively, code obsessively, and amass my divine inspirations within the universal malloc.',
 		image: ayman,
 		linkedin: 'https://github.com/omnipotentsock',
 		github: 'https://www.linkedin.com/in/ayman-ahmed-mohammed'

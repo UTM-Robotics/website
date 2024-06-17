@@ -47,7 +47,7 @@ const Contact = () => {
             <p>robotics@utmsu.ca</p>
 
             <h2>Address</h2>
-            <p>Deerfeild Hall<br/>1535 Outer Circle<br/>Mississauga, ON</p>
+            <p>Hacklab, Deerfield Hall<br/>1535 Outer Circle<br/>Mississauga, ON</p>
           </div>
 
           <form className='contactForm' onSubmit={handleSubmit}>

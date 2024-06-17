@@ -1,4 +1,8 @@
 .contactContainer {
+	padding: 2rem 1rem;
+	height: 80vh;
+	width: 65%;
+	margin: 0 auto;
 	opacity: 0;
 	transform: translateY(20px);
 	transition: opacity 1s ease, transform 1s ease;
@@ -15,7 +19,7 @@
 }
 
 .contactContainer {
-	margin-top: 20vh;
+	padding-top: 8rem;
 	/* margin-bottom: 1rem; */
 }
 
@@ -26,28 +30,22 @@
 
 /* Add your preferred styles for the overall container */
 .info {
-	display: flex;
-	justify-content: space-between;
-	max-width: 800px;
-	margin: auto;
 	padding: 20px;
 }
   
   /* Style for the contact information section */
 .contactInfo {
 	flex: 1;
-	padding-right: 20px;
+	padding-right: 1.5rem;
 }
 
 .contactInfo h2 {
-	font-size: 18px;
 	color: white;
-	margin-bottom: 8px;
 }
   
 .contactInfo p {
-	font-size: 16px;
 	color: #9b9b9b;
+	margin-bottom: 0.75rem;
 }
 
 .contactForm {
@@ -56,17 +54,17 @@
   
 .contactForm label {
 	display: block;
-	margin-bottom: 12px;
+	margin-bottom: 1rem;
 }
   
 .contactForm input,
 .contactForm textarea {
 	width: 100%;
-	padding: 12px;
+	padding: 0.25rem;
 	margin-top: 0.5rem;
-	margin-bottom: 2rem;
+	/* margin-bottom: 1rem; */
 	box-sizing: border-box;
-	border-radius: 12px;
+	border-radius: 0.25rem;
 }
 
 .contactForm textarea {
@@ -77,14 +75,18 @@
 .contactForm button {
 	background-color: lightgreen;
 	color: #000;
-	padding: 12px 20px;
+	padding: 0.75rem 1rem;
 	border: none;
-	border-radius: 12px;
+	border-radius: 0.75rem;
 	cursor: pointer;
-	font-size: 16px;
 }
   
 .contactForm button:hover {
 	background-color: #45a049;
 }
-  
+
+@media screen and (max-width: 600px){
+    .info {
+		display: block;
+	}
+}
