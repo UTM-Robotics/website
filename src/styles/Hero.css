@@ -2,16 +2,15 @@
 #hero {
     /* width: 80%; */
     margin: 0 auto;
-    padding: 10rem 2rem;
-    padding-bottom: 0;
+    padding: 10rem 2rem 6rem;
     z-index: -1;
 
     background-image: url(../assets/hero.jpg);
 
-    background-color: rgba(0, 10, 2, 0.87);
+    background-color: rgb(0, 10, 2);
     background-blend-mode: overlay;
 
-    box-shadow: 0 0 8em 8em #0e0e13 inset;
+    box-shadow: 0 0 8em 8em #000000 inset;
 }
 
 #desc {
@@ -25,14 +24,10 @@
     margin-bottom: 0.25rem;
 }
 
+@media screen and (min-width: 600px){
 
-@media screen and (max-width: 1024px){
-
-    #desc h1 {
-        text-align: center;
-    }
-
-    #desc p {
-        text-align: center;
+    #hero {
+        background-color: rgba(0, 10, 2, 0.911);
+        padding-bottom: 3rem;
     }
 }
