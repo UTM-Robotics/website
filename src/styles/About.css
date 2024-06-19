@@ -76,6 +76,10 @@
     justify-content:flex-start;
 }
 
+.teamMember .name {
+    padding: 0;
+}
+
 .teamMember .linkedin-icon {
     margin-left: 1rem;
     color: #0077b5;
