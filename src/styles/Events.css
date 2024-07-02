@@ -231,16 +231,17 @@
 
 @media screen and (max-width: 600px) {
 	#events {
-		align-items: center;
-		justify-content: space-evenly;
+		justify-content: space-around;
 
 		flex-wrap: wrap;
-		flex-direction: row;
+		flex-direction: column;
 	}
 
-	.card {
+	#events .card {
 		margin: 1rem;
-		font-size: 1rem;
+		width: 22rem;
+		height: 28rem;
+		font-size: 1.25rem;
 	}
 	
 	.card:not(:first-child){
@@ -253,6 +254,24 @@
 
 	.card:hover ~ .card {
 		transform: translateX(0);
+	}
+
+	#cardHeader #eventName {
+
+		font-size: 1.45rem;
+	}
+
+	#footDetails #eventDetails {
+		height: 13rem;
+		font-size: 1.125rem;
+	}
+
+	#venueGrid label{
+		font-size: 1.125rem;
+	}
+
+	#cardface p {
+		font-size: 2rem;
 	}
 	
 }
