@@ -1,18 +1,18 @@
 
 #eventContainer {
 	margin: 0;
-	padding: 2rem 1rem;
+	padding: 2rem 1rem 8rem;
 
 	display: relative;
 
 	background-image: url(../assets/svg/circuit-board.svg);
 	background-color: #000000;
-    box-shadow: 0px 5px 2rem 3rem #000000 inset;
+    box-shadow: 0px 20px 20rem 5rem #000000 inset;
 	
 }
 #eventContainer #header {
 	
-	font-size: 1.525rem;
+	font-size: 1.825rem;
 	text-align: center;
 
 	margin: 1rem 3rem;
@@ -55,7 +55,7 @@
 	right: 0;
 	bottom: 0;
 	background: rgb(3,24,11);
-	background: linear-gradient(80deg, rgba(47, 33, 62, 0.492) 0%, rgba(255,255,255,0) 50%); 
+	background: linear-gradient(70deg, rgba(91, 14, 122, 0.492) 0%, rgba(255,255,255,0) 60%); 
 }
 
 /* Have cards laid into one another */
