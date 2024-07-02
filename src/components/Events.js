@@ -31,7 +31,7 @@ const Events = () => {
 									<label>{event.startTime}</label>
 									<label id='c'>{event.date}</label>
 								</div>
-								<button id='redirect'>View Details</button>
+								<a href={event.url}><button id='redirect'>View Details</button></a>
 							</div>
 						</div>
 					</div>

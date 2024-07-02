@@ -181,6 +181,11 @@
 	border-left: 0.5px solid #116655;
 }
 
+#footDetails a {
+	text-decoration: none;
+	color: aliceblue;
+}
+
 #footDetails #redirect {
 
 	display: block;
