@@ -1,12 +1,13 @@
 
 #eventContainer {
 	margin: 0;
-	padding: 2rem 8rem;
+	padding: 2rem 1rem;
 
 	display: relative;
 
 	background-image: url(../assets/svg/circuit-board.svg);
-    box-shadow: 0px 5px 3rem 1rem #000000 inset;
+	background-color: #000000;
+    box-shadow: 0px 5px 2rem 3rem #000000 inset;
 	
 }
 #eventContainer #header {
@@ -19,9 +20,9 @@
 	width: 100%;
 
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	flex-direction: row;
 
 }
@@ -31,7 +32,8 @@
 #events .card {
 
 	position: relative;
-	width: 42vh;
+	width: 14rem;
+	height: 20rem;
 	align-items: center;
 
 	transition: all 250ms ease-in-out;
@@ -39,12 +41,12 @@
 
 /* Have cards laid into one another */
 .card:not(:first-child){
-	margin-left: -5rem;
+	margin-left: -2.25rem;
 }
 
 /* Pop up */
 .card:hover{
-	transform: translateY(-1.75rem);
+	transform: translateY(-1rem);
 }
 
 /* Move succeeding cards to the right  */
@@ -84,57 +86,32 @@
 }
 
 .card:hover #cardFooter {
-	height: 70%;
+	height: 74.5%;
 }
 
 /* CARDFACE */
 
 #cardface {
-	background-color: #111;
-	margin: 0;
-}
 
-
-#cardface #detailContainer {
 	display: flex;
+	align-items: center;
 
 	margin: 0;
 	height: 100%;
-
-	overflow: hidden;
+	
+	background-color: #116655;
+	
 }
 
 
-#cardface #title {
-
-	font-family: 'Syne';
-	font-size: 1.1rem;
-	text-align: left;
-
-	color: #111;
-	background-color: snow;
-
-	width: calc(70% - 2em);
-
-}
-
-#cardface #dateTime {
-
-	display: flex;
-
-	font-family: 'Syne';
-	font-size: 0.9rem;
-	font-weight: 500;
-
-	align-items: center;
-	text-align: center;
+#cardface span {
 
 	color: black;
-	background-color: lightgreen;
 
-	
-	width: calc(30% - 2em);
+	font-size: 1.225rem;
+	text-align: center;
 
+	padding: 2rem 2rem;
 }
 
 /* CARDBACK */

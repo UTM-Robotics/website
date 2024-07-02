@@ -17,7 +17,9 @@ const Events = () => {
 			<div id="events">
 			{EVENTS.map(event => (
 					<div className='card'>
-						<div id='cardImg'><img src={event.image} width={'100%'} height={'400px'}></img></div>
+						<div id='cardface'>
+							<span>{event.name}</span>
+						</div>
 						<div id='cardHeader' className='overlay'>Title: We do be like that doe.</div>
 						<div id='cardFooter' className='overlay'>lorem ipsum dolor sit amet.</div>
 					</div>
