@@ -16,29 +16,11 @@ const Events = () => {
 			<h1 id='header'>Events</h1>
 			<div id="events">
 			{EVENTS.map(event => (
-				<div class='grid'>
 					<div className='card'>
-						<div id='body'>
-							<div id='cardface'>
-								<img src={event.image} style={{width: '100%'}}></img>
-								<div id='detailContainer'>
-									<span id='title'>{event.name}</span>
-									<span id='dateTime'>{event.date} <br></br> {event.startTime}</span>
-								</div>
-							</div>
-							<div id='cardback'>
-							<div id='details'>
-								<h1 className='eventTitle'>{event.name}</h1>
-								<p className='eventTag'>{event.tag}</p>
-								<p className='eventDesc'>{event.description}</p>
-								<p className='eventHost'><b>Hosted by: </b>{event.host}</p>
-								<p>{event.date}</p>
-								<button className='eventLink' onClick={() => window.open(event.url)}>{`View Details`}<img id='redirectSVG' src={redirect}></img></button>
-							</div>
-							</div>
-						</div>
+						<div id='cardImg'><img src={event.image} width={'100%'} height={'400px'}></img></div>
+						<div id='cardHeader' className='overlay'>Title: We do be like that doe.</div>
+						<div id='cardFooter' className='overlay'>lorem ipsum dolor sit amet.</div>
 					</div>
-				</div>
 			))}
 		</div>
 	</div>

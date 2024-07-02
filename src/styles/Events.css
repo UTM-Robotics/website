@@ -1,8 +1,9 @@
 
 #eventContainer {
-	z-index: 0;
 	margin: 0;
-	padding: 5rem;
+	padding: 2rem 8rem;
+
+	display: relative;
 
 	background-image: url(../assets/svg/circuit-board.svg);
     box-shadow: 0px 5px 3rem 1rem #000000 inset;
@@ -25,51 +26,66 @@
 
 }
 
-#events .grid {
-	
-	margin: 0;
-	width: 42vh;
-
-	-ms-flex-align: center;
-	align-items: center;
-
-}
+/* CARD ALIGNMENT AND ANIMATIONS */
 
 #events .card {
-	
-	margin: 0 auto;
-	padding: 3em 0.5em;
-	width: 100%;
-
-	/* Perspective on the card flip */
-	perspective: 50em;
-}
-
-.card:hover #body {
-	/* Rotate the card 180 degrees */
-	transform: rotateY(180deg);
-}
-
-#events .card #body {
 
 	position: relative;
-	top: 0;
+	width: 42vh;
+	align-items: center;
+
+	transition: all 250ms ease-in-out;
+}
+
+/* Have cards laid into one another */
+.card:not(:first-child){
+	margin-left: -5rem;
+}
+
+/* Pop up */
+.card:hover{
+	transform: translateY(-1.75rem);
+}
+
+/* Move succeeding cards to the right  */
+.card:hover ~ .card {
+	transform: translateX(3rem);
+}
+
+/* OVERLAY */
+
+.overlay {
+
+	position: absolute;
+
 	left: 0;
+	right: 0;
+	
+	height: 0;
 	width: 100%;
-	height: 100%;
 
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
+	background-color: #0e0e13;
 
-	transition: transform 600ms;
-}
-
-#cardface, #cardback{
-	/* Round out corners of img and inner divs */
 	overflow: hidden;
-	border-radius: 8px;
+	transition: 250ms ease;
+
 }
 
+#cardHeader {
+	top: 0;
+}
+
+#cardFooter {
+	bottom: 0;
+}
+
+.card:hover #cardHeader{
+	height: 25%;
+}
+
+.card:hover #cardFooter {
+	height: 70%;
+}
 
 /* CARDFACE */
 
@@ -78,11 +94,6 @@
 	margin: 0;
 }
 
-#cardface img {
-	display: block;
-	/* height: 20rem; */
-	aspect-ratio: 1/1;
-}
 
 #cardface #detailContainer {
 	display: flex;
@@ -93,15 +104,6 @@
 	overflow: hidden;
 }
 
-#cardface #dateTime, #cardface #title {
-
-	display: inline-block;
-
-	margin: 0;
-	padding: 1em;
-
-	vertical-align: middle;
-}
 
 #cardface #title {
 
