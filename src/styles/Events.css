@@ -228,3 +228,31 @@
 
 	padding: 2rem 2rem;
 }
+
+@media screen and (max-width: 600px) {
+	#events {
+		align-items: center;
+		justify-content: space-evenly;
+
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.card {
+		margin: 1rem;
+		font-size: 1rem;
+	}
+	
+	.card:not(:first-child){
+		margin-left: 1rem;
+	}
+
+	.card:hover{
+		box-shadow: -1px 1px 10px 1px #000;
+	}
+
+	.card:hover ~ .card {
+		transform: translateX(0);
+	}
+	
+}
