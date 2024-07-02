@@ -11,6 +11,10 @@
 	
 }
 #eventContainer #header {
+	
+	font-size: 1.525rem;
+	text-align: center;
+
 	margin: 1rem 3rem;
 }
 
@@ -82,12 +86,99 @@
 }
 
 .card:hover #cardHeader{
-	height: 25%;
+	height: 20%;
 }
 
 .card:hover #cardFooter {
-	height: 74.5%;
+	height: 77.5%;
 }
+
+/* Event Details */
+
+.overlay label {
+
+	display: block;
+
+	padding: 0 1.25rem;
+	width: fit-content;
+	height: fit-content;
+
+
+	font-size: 0.75rem;
+	text-align: center;
+
+}
+
+#cardHeader #eventName {
+
+	font-size: 0.825rem;
+
+	position: absolute;
+	top: 50%;
+
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+
+}
+
+#cardFooter #footDetails {
+	position: absolute;
+	top: 50%;
+
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+#footDetails #eventDetails {
+
+	display: inline-block;
+
+	vertical-align: middle;
+	text-align: center;
+
+	height: 8rem;
+	overflow-y: scroll;
+}
+
+#footDetails #venueGrid {
+
+	display: flex;
+
+	margin: 0;
+	padding: 0 1.25rem;
+	
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	line-height: 3rem;
+}
+
+#venueGrid label{
+	padding: 0;
+}
+
+#footDetails #redirect {
+
+	display: block;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+
+	background-color: #116655;
+
+	position: relative;
+	bottom: 0;
+	width: 100%;
+
+
+	transition: all 100ms ease-in-out;
+}
+
+#footDetails #redirect:hover {
+	border: none;
+	background-color: #408678;
+	color: #000;
+}
+
 
 /* CARDFACE */
 
@@ -104,7 +195,7 @@
 }
 
 
-#cardface span {
+#cardface p {
 
 	color: black;
 
