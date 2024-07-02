@@ -40,7 +40,22 @@
 	height: 20rem;
 	align-items: center;
 
+	border-radius: 0.5rem;
+	box-sizing: border-box;
+	overflow: hidden;
+
 	transition: all 250ms ease-in-out;
+}
+
+.card::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgb(3,24,11);
+	background: linear-gradient(80deg, rgba(47, 33, 62, 0.492) 0%, rgba(255,255,255,0) 50%); 
 }
 
 /* Have cards laid into one another */
@@ -51,6 +66,7 @@
 /* Pop up */
 .card:hover{
 	transform: translateY(-1rem);
+	box-shadow: -1px 1px 10px 1px #000;
 }
 
 /* Move succeeding cards to the right  */
@@ -145,16 +161,24 @@
 	display: flex;
 
 	margin: 0;
+	margin-bottom: 1rem;
 	padding: 0 1.25rem;
 	
 	flex-wrap: wrap;
 	justify-content: space-between;
 	
-	line-height: 3rem;
+	line-height: 2rem;
 }
 
 #venueGrid label{
+	flex: 1 1 auto;
+	position: relative;
+	text-align: center;
 	padding: 0;
+}
+
+#venueGrid label + label {
+	border-left: 0.5px solid #116655;
 }
 
 #footDetails #redirect {
@@ -203,104 +227,4 @@
 	text-align: center;
 
 	padding: 2rem 2rem;
-}
-
-/* CARDBACK */
-
-#events .card #cardback {
-
-	position: absolute;
-	top: 0;
-
-	height: 100%;
-	width: 100%;
-
-	margin: 0 auto;
-
-	overflow: hidden;
-	color: snow;
-	background-color: #111;
-
-	width: 100%;
-	margin: auto;
-
-	/* Render the card as pre-rotated */
-	transform: rotateY(180deg);
-
-	-webkit-backface-visibility: hidden; /* Safari */
-	backface-visibility: hidden;
-
-}
-#cardback #details{
-	padding: 2rem;
-}
-
-.eventTitle {
-	margin-top: 16px;
-	font-size: 1.25rem;
-}
-
-.eventDesc {
-	display: block;
-	height: 10vh;
-
-	padding: 0 5px;
-
-	overflow-wrap: word-break;
-	overflow-y: auto;
-	overflow-x: hidden;
-}
-
-.eventTag{
-
-	display: block;
-
-	margin: 8px 0;
-	width: fit-content;
-
-	padding: 5px 8px;
-
-	border: 0.5px solid lightgreen;
-	border-radius: 3em;
-
-	font-weight: bolder;
-	font-size: 0.6rem;
-	color: lightgreen;
-}
-
-.eventLink{
-
-	margin: auto;
-	height: 2rem;
-	width: fit-content;
-
-	padding: 5px 12px;
-
-	background-color: rgb(138, 214, 138);
-	color: #0e0e13;
-	font-weight: bolder;
-
-	
-	border: 0.5px solid lightgreen;
-	border-radius: 2em;
-
-	float: right;
-
-}
-
-#redirectSVG {
-	height: 12px;
-	margin: auto 0px auto 8px;
-}
-
-/* MOBILE VIEWPORT SETTINGS */
-
-@media screen and (max-width: 1200px) {
-
-	#eventContainer {
-		padding: 2rem 5rem;
-	}
-	#events .card #body {
-		transition: transform 300ms;
-	}
 }
