@@ -21,10 +21,10 @@ const Home = () => {
 			
 		{/* <StarryNight/> */}
 		<Header/>
+		<Hero/>
 
 		<div id="main">
 			
-			<Hero/>
 			<Events id="#events"/>
 			<About/>
 			<Contact/>
