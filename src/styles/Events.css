@@ -252,6 +252,14 @@
 		height: 16rem;
 		font-size: 0.8rem;
 	}
+
+	.card:not(:first-child){
+		margin-left: -2.25rem;
+	}
+
+	#events .card:nth-child(2n + 1){
+		margin-left: 0;
+	}
 /* 	
 	.card:not(:first-child){
 
