@@ -1,7 +1,7 @@
 
 #eventContainer {
 	margin: 0;
-	padding: 2rem 1rem 8rem;
+	padding: 0rem 1rem 2rem;
 
 	display: relative;
 
@@ -12,10 +12,10 @@
 }
 #eventContainer #header {
 	
-	font-size: 1.825rem;
+	font-size: 1.525rem;
 	text-align: center;
 
-	margin: 1rem 3rem;
+	margin: 0rem 3rem 1.5rem;
 }
 
 #events {
@@ -36,8 +36,8 @@
 #events .card {
 
 	position: relative;
-	width: 14rem;
-	height: 20rem;
+	width: 13rem;
+	height: 16rem;
 	align-items: center;
 
 	border-radius: 0.5rem;
@@ -126,7 +126,7 @@
 	height: fit-content;
 
 
-	font-size: 0.75rem;
+	font-size: 0.67rem;
 	text-align: center;
 
 }
@@ -158,7 +158,7 @@
 	vertical-align: middle;
 	text-align: center;
 
-	height: 8rem;
+	height: 6rem;
 	overflow-y: scroll;
 }
 
