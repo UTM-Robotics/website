@@ -242,47 +242,44 @@
 
 @media screen and (max-width: 600px) {
 	#events {
-		justify-content: space-around;
-
+		justify-content: row;
 		flex-wrap: wrap;
-		flex-direction: column;
+		flex-direction: row;
 	}
 
 	#events .card {
-		margin: 1rem;
-		width: 22rem;
-		height: 28rem;
-		font-size: 1.25rem;
+		width: 12rem;
+		height: 16rem;
+		font-size: 0.8rem;
 	}
-	
+/* 	
 	.card:not(:first-child){
-		margin-left: 1rem;
-	}
 
-	.card:hover{
+	} */
+
+	/* .card:hover{
 		box-shadow: -1px 1px 10px 1px #000;
 	}
 
 	.card:hover ~ .card {
 		transform: translateX(0);
-	}
+	} */
 
 	#cardHeader #eventName {
 
-		font-size: 1.45rem;
+		font-size: 0.8rem;
 	}
 
 	#footDetails #eventDetails {
-		height: 13rem;
-		font-size: 1.125rem;
+		font-size: 0.65rem;
 	}
 
 	#venueGrid label{
-		font-size: 1.125rem;
+		font-size: 0.6rem;
 	}
 
 	#cardface p {
-		font-size: 2rem;
+		font-size: 0.8rem;
 	}
 	
 }
