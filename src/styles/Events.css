@@ -44,7 +44,13 @@
 	box-sizing: border-box;
 	overflow: hidden;
 
+	color: aliceblue;
+
 	transition: all 250ms ease-in-out;
+}
+
+.card #cardface p{
+	color: rgb(139, 212, 255);
 }
 
 .card::before{
@@ -55,7 +61,7 @@
 	right: 0;
 	bottom: 0;
 	background: rgb(3,24,11);
-	background: linear-gradient(70deg, rgba(91, 14, 122, 0.492) 0%, rgba(255,255,255,0) 60%); 
+	background: linear-gradient(70deg, rgba(223, 33, 163, 0.492) 0%, rgba(255,255,255,0) 50%); 
 }
 
 /* Have cards laid into one another */
