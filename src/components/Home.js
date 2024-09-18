@@ -17,7 +17,7 @@ const Home = () => {
 	}, []);
 
 	return (
-		<div>
+		<div id='page'>
 			
 		{/* <StarryNight/> */}
 		<Header/>

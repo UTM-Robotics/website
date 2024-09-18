@@ -20,7 +20,6 @@ const About = () => {
 		<div>
 			<Header/>
 			<div className="aboutContainer">
-				<img src={teamPhoto} alt="Robotics Team"/>
 
 				<Blurb/>
 
