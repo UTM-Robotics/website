@@ -7,25 +7,15 @@
 
 
 	display: flex;
-	padding: 1.5rem 0 1.5rem 0;
+	padding: 0.5rem 0;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 
-	background-color:#0c1310af;
+	background-color:rgb(0, 0, 0);
 	backdrop-filter: blur(15px);
 
 	transition: 500ms ease-in-out;
 
-}
-
-.headerContainer:hover #logoContainer{
-	float: left;
-	padding: 0.25em 3em;
-	margin-left: 1vw;
-}
-
-.logo:hover{
-	transform: translate(12.5%) scale(1.3);
 }
 
 #logoContainer {
@@ -33,12 +23,9 @@
 	cursor: pointer;
 }
 
-.headerContainer:hover {
-	padding: 0rem 0 0rem 0;
-}
 
 .headerContainer .logo{
-	width: 0; 
+	width: 3rem; 
 	aspect-ratio: 1 / 1;
 	height: 100%;
 	padding-top: 0.25em;
@@ -46,21 +33,6 @@
 	transition: 300ms ease-in-out;
 }
 
-.headerContainer:hover .logo {
-	width: 4rem;
-	padding-right: 5em;
-	margin-top: 1em;
-
-
-}
-
-.headerContainer #logoName{
-	font-weight: 900;
-	font-size: 1.25rem;
-	margin-left: 3em;
-
-	transition: 300ms ease-in-out;
-}
 
 .headerContainer:hover #logoName {
 	/* float: right; */
@@ -87,7 +59,7 @@
 	color: white;
 	padding: 1em 3vw;
 
-	font-size: inherit;
+	font-size: 0.65rem;
 	
 	transition: 125ms ease-in-out;
 }
