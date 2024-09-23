@@ -14,8 +14,12 @@
 	background-color: black;
 	backdrop-filter: blur(15px);
 
-	transition: 500ms ease-in-out;
+	transition: 300ms ease;
 
+}
+
+.hiddenNav{
+	transform: translateY(-100%);
 }
 
 #logoContainer {

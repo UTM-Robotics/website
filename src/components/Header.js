@@ -1,4 +1,5 @@
-import React from 'react';
+
+import { useState, useEffect, React } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
 
 import '../styles/Header.css';
@@ -7,6 +8,40 @@ import roboticsLogo from "../assets/robotics-logo.png"
 
 const Header = () => {
 	const navigate = useNavigate();
+
+	const [showNav, setShowNav] = useState(true);
+
+	const [scrollData, setScrollData] = useState({
+		y: 0,
+		lastY: 0
+	})
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setScrollData(prevState => {
+				return {
+					y: window.scrollY,
+					lastY: prevState.y
+				}
+			})
+		}
+
+		window.addEventListener('scroll', handleScroll)
+
+		return () => window.removeEventListener('scroll', handleScroll)
+
+	}, [])
+
+	useEffect(() => {
+		console.log(scrollData);
+		
+		if(scrollData.lastY > scrollData.y){
+			setShowNav(true);
+		}
+		else {
+			setShowNav(false);
+		}
+	}, [scrollData])
 
 	const handleHomeLinkClick = () => {
 		navigate('/');
@@ -44,7 +79,7 @@ const Header = () => {
 	};
 
 	return (
-		<nav className='headerContainer'>
+		<nav className={showNav ? 'headerContainer' : 'headerContainer hiddenNav'}>
 			<div id='logoContainer' onClick={handleHomeLinkClick}>
 				<img className='logo' src={roboticsLogo} alt="Robotics Logo"></img>
 			</div>
