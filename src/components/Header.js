@@ -55,9 +55,9 @@ const Header = () => {
 		navigate('/');
 	
 		setTimeout(() => {
-		  	const element = document.getElementById('events');
+		  	const element = document.getElementById('eventContainer');
 		  	if (element) {
-				const offset = element.offsetTop + 50;
+				const offset = element.offsetTop - 100;
 				window.scrollTo({
 					top: offset,
 					behavior: 'smooth',
@@ -67,21 +67,47 @@ const Header = () => {
 	};
 
 	const handleAboutLinkClick = () => {
-		navigate('/about');
-
-		window.scrollTo({ top: 0, behavior: 'instant' });
+		navigate('/');
+	
+		setTimeout(() => {
+		  	const element = document.getElementById('aboutContainer');
+		  	if (element) {
+				const offset = element.offsetTop - 50;
+				window.scrollTo({
+					top: offset,
+					behavior: 'smooth',
+				});
+				setShowNav(false)
+			}
+		}, 100);
 	};
 
 	const handleContactLinkClick = () => {
-		navigate('/contact');
-
-		window.scrollTo({ top: 0, behavior: 'instant' });
+		navigate('/');
+	
+		setTimeout(() => {
+		  	const element = document.getElementById('contactForm');
+		  	if (element) {
+				const offset = element.offsetTop;
+				window.scrollTo({
+					top: offset,
+					behavior: 'smooth',
+				});
+				setShowNav(false)
+			}
+		}, 100);
 	};
 
 	return (
 		<nav className={showNav ? 'headerContainer' : 'headerContainer hiddenNav'}>
 			<div id='logoContainer' onClick={handleHomeLinkClick}>
 				<img className='logo' src={roboticsLogo} alt="Robotics Logo"></img>
+			</div>
+				{/* <span id='logoName'>UTM Robotics</span> */}
+			<div id='pages'>
+				<button onClick={handleEventsLinkClick} id='redirect'>Events</button>
+				<button onClick={handleAboutLinkClick} id='redirect'>About</button>
+				<button onClick={handleContactLinkClick} id='redirect'>Contact</button>
 			</div>
 		</nav>
 	);

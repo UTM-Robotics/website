@@ -34,9 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
-      <Header />
-
+    <div id='contactForm'>
       <div className='contactContainer'>
         <h2 id='title'>Email us directly, or contact us using the form anonymously!</h2>
 

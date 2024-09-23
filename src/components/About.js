@@ -18,8 +18,7 @@ const About = () => {
 
 	return (
 		<div>
-			<Header/>
-			<div className="aboutContainer">
+			<div className="aboutContainer" id='aboutContainer'>
 
 				<Blurb/>
 
