@@ -33,7 +33,6 @@ const Header = () => {
 	}, [])
 
 	useEffect(() => {
-		console.log(scrollData);
 		
 		if(scrollData.lastY > scrollData.y){
 			setShowNav(true);
