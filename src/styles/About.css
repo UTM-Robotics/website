@@ -14,8 +14,10 @@
 
 #aboutContainer img {
     display: block;
-    width: 70%;
-    margin: 1rem auto;
+    width: 100%;
+    margin: 0 auto;
+
+    border-radius: 1rem 1rem 0 0;
 }
 
 .team-section-container {
@@ -42,22 +44,22 @@
 
 .teamMember {
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
     
     margin: 1rem 1rem;
     
     width: 12rem;
     /* max-height: 20em; */
     
-    border: 0px solid transparent;
+    border: 3px solid transparent;
     border-radius: 1rem;
 
     transition: transform 300ms ease-in-out;
 }
   
 .teamMember:hover {
-    transform: scale(1.1);
-    border: 3px solid lightgreen;
+    /* transform: scale(1.1); */
+    border-color:  lightgreen;
     /* z-index: 5; */
 }
 
@@ -72,9 +74,6 @@
     display: flex;
     justify-content: center;
 
-}
-
-.teamMember .name {
 }
 
 .teamMember .linkedin-icon {
@@ -119,27 +118,32 @@
 
 .teamMember .desc .bio {
 
-    margin-top: 0.5rem;
+    position: absolute;
+    top: 1.75rem;
+    left: 3rem;
+    z-index: -1;
 
-    max-height: 0;
-    /* padding: 0.5rem; */
-    overflow: hidden;
+    padding: 0.5rem;
+    background-color: rgba(252, 244, 218, 0);
+    color: #00000000;
+    border: 2px solid #00000000;
+    border-radius: 8px;
+    /* overflow: hidden; */
     font-size: 0.6rem;
     text-align: center;
 
-    transition: all 100ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
-/* .teamMember:hover .desc .bio {
-    max-height: 500rem;
-    overflow-y: auto;
-} */
-.teamMember:hover .desc {
-    /* position: absolute;
-    height: 100%; */
+.teamMember:hover .bio{
+    background-color: rgb(252, 244, 218);
+    color: #000000;
+    border: 2px solid #00000000;
 
-
+    z-index: 5;
 }
+
+
 
 @media screen and (max-width: 600px){
 

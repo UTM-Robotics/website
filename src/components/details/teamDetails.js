@@ -15,7 +15,7 @@ const teamDetails = [
 		id: 1,
 		name: 'Max',
 		role: 'President',
-		bio: 'I am Maksym Woychyshyn, President of the Robotics club at UTM! I originally became interested in robotics in high school, and this has led to me studying CompSci Robotics courses at UTM. Looking forward to the semester!',
+		bio: 'I originally became interested in robotics in high school, and this has led to me studying CompSci Robotics courses at UTM. Looking forward to the semester!',
 		image: max,
 		linkedin: 'https://www.linkedin.com/in/maksym-woychyshyn-a14836197/',
 		github: ''
