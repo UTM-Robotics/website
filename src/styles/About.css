@@ -156,6 +156,10 @@
         justify-content: center;
     }
 
+    .teamMember .bio {
+        display: none;
+    }
+
 
     /* .teamMember {
         width: 22rem;
