@@ -26,7 +26,7 @@
 }
   
   
-.socials {
+.footerContainer .socials {
 	display: flex;
 	justify-content: space-around;
 }
