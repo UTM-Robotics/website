@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 
 import Header from './Header'
 import Hero from './Hero'
-import Blurb from './Blurb'
+import About from './About'
+import Contact from './Contact'
 import Events from './Events'
 import Footer from './Footer'
 
@@ -16,17 +17,17 @@ const Home = () => {
 	}, []);
 
 	return (
-		<div>
+		<div id='page'>
 			
 		{/* <StarryNight/> */}
 		<Header/>
+		<Hero/>
 
 		<div id="main">
 			
-			<Hero/>
-
-
 			<Events id="#events"/>
+			<About/>
+			<Contact/>
 
 		</div>
 

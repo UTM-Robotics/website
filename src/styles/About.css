@@ -1,84 +1,79 @@
 
-.aboutContainer {
-    padding: 8rem 1rem;
+#aboutContainer {
+    padding: 1rem 1rem;
 	opacity: 0;
 	transform: translateY(20px);
 	transition: opacity 1s ease, transform 1s ease;
 }
 
-.aboutContainer.fade-in-up {
+#aboutContainer.fade-in-up {
 	opacity: 1;
 	transform: translateY(0);
     font-family: '';
 }
 
-.aboutContainer img {
+#aboutContainer img {
     display: block;
-    width: 70%;
-    margin: 1rem auto;
+    width: 100%;
+    margin: 0 auto;
+
+    border-radius: 1rem 1rem 0 0;
 }
 
 .team-section-container {
     padding: 0.25rem 0;
-    box-shadow: 0px 2rem 15rem 16em #0f0f11 inset;
+    box-shadow: 0px 2rem 15rem 16em #000000 inset;
     background-image: url(../assets/svg/circuit-board.svg);
 }
 
 .meet-the-team {
-    font-size: 4rem;
+    font-size: 2rem;
     display: block;
-    margin-top: 12rem;
-	margin-bottom: 6rem;
+    margin-top: 2rem;
+	margin-bottom: 2rem;
     text-align: center;
 }
 
 .teamContainer {
-    width: 85%;
+    /* width: 85%; */
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .teamMember {
     box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     
-    margin-top: 7vh;
+    margin: 1rem 1rem;
     
-    width: 18rem;
-    height: 28rem;
+    width: 12rem;
+    /* max-height: 20em; */
     
-    border: 0px solid transparent;
-    border-radius: 30px;
+    border: 3px solid transparent;
+    border-radius: 1rem;
 
     transition: transform 300ms ease-in-out;
 }
   
 .teamMember:hover {
-    transform: scale(1.1);
-    border: 3px solid lightgreen;
-    z-index: 5;
+    /* transform: scale(1.1); */
+    border-color:  lightgreen;
+    /* z-index: 5; */
 }
 
 .teamMember img {
     margin: 0;
     
     width: 100%;
-    height: auto;
-    
-    border-radius: 15px;
+    height: auto;    
 }
 
 .teamMember .title {
     display: flex;
-    justify-content:flex-start;
-}
+    justify-content: center;
 
-.teamMember .name {
-    padding: 0;
-    margin: 0;
 }
 
 .teamMember .linkedin-icon {
@@ -92,12 +87,14 @@
 }
 
 .teamMember .desc {
-    position: absolute;
-    padding: 2rem;
+
+    position: relative;
+    padding: 0.5rem 0.25rem 0.5rem;
+    /* width: 100%; */
     bottom: 0;
     font-size: 0.75rem;
     
-    width: calc(100% - 4rem);
+    
     height: fit-content;
     
     border-bottom-left-radius: 1rem;
@@ -113,40 +110,59 @@
 
 .teamMember .role {
     color: gray;
+    margin-top: 0.15rem;
+    font-size: 0.55rem;
 }
 
 
 
 .teamMember .desc .bio {
 
-    margin-top: 0.5rem;
+    position: absolute;
+    top: 1.75rem;
+    left: 3rem;
+    z-index: -1;
 
-    max-height: 0;
-    overflow: hidden;
+    padding: 0.5rem;
+    background-color: rgba(252, 244, 218, 0);
+    color: #00000000;
+    border: 2px solid #00000000;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    font-size: 0.6rem;
+    text-align: center;
 
-    transition: all 100ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
-.teamMember:hover .desc .bio {
-    max-height: 500rem;
-    overflow-y: auto;
+.teamMember:hover .bio{
+    background-color: rgb(252, 244, 218);
+    color: #000000;
+    border: 2px solid #00000000;
+
+    z-index: 5;
 }
-.teamMember:hover .desc {
-    color: black;
-    background-color: snow;
-}
+
+
 
 @media screen and (max-width: 600px){
+
+    .teamMember {
+        width: 8rem;
+        margin: 0 0.8rem;
+    }
+
     .teamMember .title {
         justify-content: center;
     }
 
-    .teamMember img{
-        object-position: center;
+    .teamMember .bio {
+        display: none;
     }
 
-    .teamMember {
+
+    /* .teamMember {
         width: 22rem;
         height: 30rem;
-    }
+    } */
 }

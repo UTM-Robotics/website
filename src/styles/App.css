@@ -61,6 +61,19 @@ p, a, #redirect {
 	font-family: 'Quicksand', sans-serif;
 }
 
+button {
+	border: none;
+	background-color: transparent;
+	color: inherit;
+	cursor: pointer;
+	padding: 0;
+	font-size: inherit;
+}
+  
+button:focus {
+	outline: none;
+}
+
 .ul{
 	text-decoration: underline;
 	text-decoration-color: rgb(54, 92, 74);
@@ -84,7 +97,7 @@ span, label {
 
 @media screen and (min-width: 480px){
     html {
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 }
@@ -92,10 +105,6 @@ span, label {
 @media screen and (min-width: 600px){
     html {
 		font-size: 18px;
-	}
-
-	h1, h2, h3, h4, h5, h6, p {
-		text-align: left;
 	}
 }
 

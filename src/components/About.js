@@ -18,9 +18,7 @@ const About = () => {
 
 	return (
 		<div>
-			<Header/>
-			<div className="aboutContainer">
-				<img src={teamPhoto} alt="Robotics Team"/>
+			<div className="aboutContainer" id='aboutContainer'>
 
 				<Blurb/>
 
@@ -34,7 +32,7 @@ const About = () => {
 								<div className="desc">
 									<div className="title">
 										<h3 className="name">{member.name}</h3>
-										<div className="social-icons">
+										{/* <div className="social-icons">
 											<a href={`${member.linkedin}`} target="_blank" rel="noopener noreferrer">
 												<FaLinkedin className="linkedin-icon" />
 											</a>
@@ -42,7 +40,7 @@ const About = () => {
 											<a href={`${member.github}`} target="_blank" rel="noopener noreferrer">
 												<FaGithub className="github-icon"/>
 											</a>
-										</div>
+										</div> */}
 									</div>
 									<p className="role">{member.role}</p>
 									<p className="bio">{member.bio}</p>
@@ -52,7 +50,6 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-			<Footer/>
 		</div>
 	);
 };

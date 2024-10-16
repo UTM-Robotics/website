@@ -34,11 +34,9 @@ const Contact = () => {
   };
 
   return (
-    <div>
-      <Header />
-
+    <div id='contactForm'>
       <div className='contactContainer'>
-        <h2>Email us directly, or contact us using the form anonymously!</h2>
+        <h2 id='title'>Email us directly, or contact us using the form anonymously!</h2>
 
         <div className='info'>
           <div className='contactInfo'>
@@ -85,8 +83,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

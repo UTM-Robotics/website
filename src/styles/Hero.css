@@ -2,7 +2,7 @@
 #hero {
     /* width: 80%; */
     margin: 0 auto;
-    padding: 10rem 2rem 6rem;
+    padding: 1rem 2rem 5rem;
     z-index: -1;
 
     background-image: url(../assets/hero.jpg);
@@ -15,7 +15,7 @@
 
 #desc {
 	margin-left: 0px;
-    padding: 2rem 2rem;
+    padding: 1.5rem 2rem;
 
 }
 
@@ -28,6 +28,6 @@
 
     #hero {
         background-color: rgba(0, 10, 2, 0.911);
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
     }
 }

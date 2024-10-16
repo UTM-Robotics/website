@@ -3,7 +3,6 @@
 	color: white;
 	position: relative; 
 	width: 100vw;
-	height: 8%;
 	border: none;
 
 	display: flex;
@@ -13,21 +12,21 @@
 }
 
 .footerContainer *{
-	padding: 0.25em 6px;
+	padding: 0.25rem 0.25rem;
 
 }
 
 .copyright, .socials {
-	margin: 12px 4vw;
+	margin: 12px 1rem;
 }
 
 .copyright {
 	font-size: 0.85rem;
-	/* margin-bottom: 18px; */
+
 }
   
   
-.socials {
+.footerContainer .socials {
 	display: flex;
 	justify-content: space-around;
 }
@@ -35,11 +34,11 @@
 .socials a {
 	color: white;
 	text-decoration: none;
-	margin-left: 20px;
+	margin-left: 1rem;
 }
 
 .socials img {
 	margin: auto;
-	height: 1.5rem;
+	height: 1.25rem;
 }
   

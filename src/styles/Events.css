@@ -1,7 +1,7 @@
 
 #eventContainer {
 	margin: 0;
-	padding: 2rem 1rem 8rem;
+	padding: 0rem 1rem 2rem;
 
 	display: relative;
 
@@ -12,10 +12,10 @@
 }
 #eventContainer #header {
 	
-	font-size: 1.825rem;
+	font-size: 1.525rem;
 	text-align: center;
 
-	margin: 1rem 3rem;
+	margin: 0rem 3rem 1.5rem;
 }
 
 #events {
@@ -36,15 +36,21 @@
 #events .card {
 
 	position: relative;
-	width: 14rem;
-	height: 20rem;
+	width: 13rem;
+	height: 16rem;
 	align-items: center;
 
 	border-radius: 0.5rem;
 	box-sizing: border-box;
 	overflow: hidden;
 
+	color: aliceblue;
+
 	transition: all 250ms ease-in-out;
+}
+
+.card #cardface p{
+	color: rgb(139, 212, 255);
 }
 
 .card::before{
@@ -55,7 +61,7 @@
 	right: 0;
 	bottom: 0;
 	background: rgb(3,24,11);
-	background: linear-gradient(70deg, rgba(91, 14, 122, 0.492) 0%, rgba(255,255,255,0) 60%); 
+	background: linear-gradient(70deg, rgba(223, 33, 163, 0.492) 0%, rgba(255,255,255,0) 50%); 
 }
 
 /* Have cards laid into one another */
@@ -120,7 +126,7 @@
 	height: fit-content;
 
 
-	font-size: 0.75rem;
+	font-size: 0.67rem;
 	text-align: center;
 
 }
@@ -152,7 +158,7 @@
 	vertical-align: middle;
 	text-align: center;
 
-	height: 8rem;
+	height: 6rem;
 	overflow-y: scroll;
 }
 
@@ -236,47 +242,52 @@
 
 @media screen and (max-width: 600px) {
 	#events {
-		justify-content: space-around;
-
+		justify-content: row;
 		flex-wrap: wrap;
-		flex-direction: column;
+		flex-direction: row;
 	}
 
 	#events .card {
-		margin: 1rem;
-		width: 22rem;
-		height: 28rem;
-		font-size: 1.25rem;
-	}
-	
-	.card:not(:first-child){
-		margin-left: 1rem;
+		width: 12rem;
+		height: 16rem;
+		font-size: 0.8rem;
 	}
 
-	.card:hover{
+	.card:not(:first-child){
+		margin-left: -2.25rem;
+	}
+
+	#events .card:nth-child(2n + 1){
+		margin-left: 0;
+	}
+/* 	
+	.card:not(:first-child){
+
+	} */
+
+	/* .card:hover{
 		box-shadow: -1px 1px 10px 1px #000;
 	}
 
 	.card:hover ~ .card {
 		transform: translateX(0);
-	}
+	} */
 
 	#cardHeader #eventName {
 
-		font-size: 1.45rem;
+		font-size: 0.8rem;
 	}
 
 	#footDetails #eventDetails {
-		height: 13rem;
-		font-size: 1.125rem;
+		font-size: 0.65rem;
 	}
 
 	#venueGrid label{
-		font-size: 1.125rem;
+		font-size: 0.6rem;
 	}
 
 	#cardface p {
-		font-size: 2rem;
+		font-size: 0.8rem;
 	}
 	
 }
