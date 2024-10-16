@@ -40,7 +40,7 @@ const Blurb = () => {
             title="Students"
             description="We aim to foster student interest and engagement in the field of Robotics through different events. Apart from workshops, we also offer general meetings where we host speakers, watch Battlebots, and help students interested in tinkering with Arduinos."
           />
-          <GoalCell title="Collaborations" description="I am adding text here because the website looks really freaking weird without it. Like uncanny valley kinda shit. This felt more eerie than the most colorified, gruesome, eldritch, Lovecraftian nightmare you have ever laid eyes on. Which is - of course - oxymoronic." />
+          <GoalCell title="Collaborations" description="Engage in projects between clubs with our collaborative projects!" />
         </div>
       </div>
     </div>
