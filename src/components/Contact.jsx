@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import Header from './Header';
 import Footer from './Footer';
 import '../styles/Contact.css';
@@ -23,7 +23,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+    emailjs.sendForm(import.meta.env.REACT_APP_EMAILJS_SERVICE_ID, import.meta.env.REACT_APP_EMAILJS_TEMPLATE_ID, e.target, import.meta.env.REACT_APP_EMAILJS_PUBLIC_KEY)
       .then((result) => {
         alert("Thanks for contacting us! We'll be in touch within 1-2 business days.");
       }, (error) => {

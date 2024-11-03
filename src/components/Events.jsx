@@ -1,5 +1,5 @@
 import React from 'react';
-import EVENTS from './details/eventDetails';
+import { EVENTS } from './details/eventDetails';
 
 import "../styles/Events.css"
 import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
@@ -10,7 +10,7 @@ import redirect from '../assets/svg/arrow-up-right-from-square-solid.svg';
 
 
 const Events = () => {
-	
+
 	return (
 		<div id='eventContainer'>
 			<h1 id='header'>Upcoming events</h1>

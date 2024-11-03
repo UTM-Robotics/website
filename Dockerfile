@@ -1,12 +1,14 @@
-FROM node:lts
+FROM node:lts AS builder
 
-WORKDIR ~/website
+WORKDIR /
 
-RUN npm install -g serve
 COPY package.json package-lock.json ./
 RUN npm ci
-
 COPY . .
 RUN npm run build
 
-CMD [ "serve", "build" ]
+FROM httpd:2.4 AS runner
+
+COPY --from=builder /dist/ /usr/local/apache2/htdocs/
+
+EXPOSE 80

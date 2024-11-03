@@ -1,16 +1,16 @@
 
-import aaron from '../../assets/memberPhotos/Aaron.JPG'
-import alex from '../../assets/memberPhotos/Alex.JPG'
-import usha from '../../assets/memberPhotos/Usha.JPG'
-import ayman from '../../assets/memberPhotos/Ayman.JPG'
-import ido from '../../assets/memberPhotos/Ido.JPG'
-import max from '../../assets/memberPhotos/Max.JPG'
-import razeen from '../../assets/memberPhotos/Razeen.JPG'
-import travis from '../../assets/memberPhotos/Travis.JPG'
-import prottoy from '../../assets/memberPhotos/Prottoy.JPG'
+import aaron from '../../assets/memberPhotos/Aaron.jpg'
+import alex from '../../assets/memberPhotos/Alex.jpg'
+import usha from '../../assets/memberPhotos/Usha.jpg'
+import ayman from '../../assets/memberPhotos/Ayman.jpg'
+import ido from '../../assets/memberPhotos/Ido.jpg'
+import max from '../../assets/memberPhotos/Max.jpg'
+import razeen from '../../assets/memberPhotos/Razeen.jpg'
+import travis from '../../assets/memberPhotos/Travis.jpg'
+import prottoy from '../../assets/memberPhotos/Prottoy.jpg'
 import none from '../../assets/memberPhotos/none.png'
 
-const teamDetails = [
+export const MEMBERS = [
 	{
 		id: 1,
 		name: 'Max',
@@ -138,6 +138,3 @@ const teamDetails = [
 		github: ''
 	}
 ];
-
-export const MEMBERS = teamDetails;
-export default teamDetails;

@@ -3,7 +3,7 @@ import sample2 from '../../assets/sample2.jpg';
 import sample3 from '../../assets/sample3.jpg';
 import sample4 from '../../assets/sample4.jpeg';
 
-const eventDetails = [
+export const EVENTS = [
 	{
 		id: 1,
 		name: "General Meeting: Exploring the world of Battle Bots!",
@@ -49,6 +49,3 @@ const eventDetails = [
 		url: `https://github.com/omnipotentsock`
 	}
 ]
-
-export const EVENTS = eventDetails;
-export default eventDetails;

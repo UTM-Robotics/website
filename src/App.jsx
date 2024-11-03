@@ -5,8 +5,6 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 
-import "./styles/App.css"
-
 const App = () => {
 	return (
 		<Router>
