@@ -1,30 +1,31 @@
 .homeContainer {
-	opacity: 0;
-	transform: translateY(20px);
-	transition: opacity 1s ease, transform 1s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
 }
 
 .homeContainer.fade-in-up {
-	opacity: 1;
-	transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #page {
-	background-color: black;
+  background-color: black;
 }
 
 #main {
-	width: 80%;
-	margin: 0 auto;
-	background-color: black;
+  width: 80%;
+  margin: 0 auto;
+  background-color: black;
 }
 
 body {
-	background-color: #0e0e13; /* Change the background color to black */
-	color: white;
-	/* padding: 10px; */
+  background-color: #0e0e13; /* Change the background color to black */
+  color: white;
+  /* padding: 10px; */
 }
 
-@media screen and (max-width: 600px){
-
+@media screen and (max-width: 600px) {
 }

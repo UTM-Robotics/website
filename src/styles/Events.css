@@ -1,271 +1,253 @@
-
 #eventContainer {
-	margin: 0;
-	padding: 0rem 1rem 2rem;
+  margin: 0;
+  padding: 0rem 1rem 2rem;
 
-	display: relative;
+  display: relative;
 
-	background-image: url(../assets/svg/circuit-board.svg);
-	background-color: #000000;
-    box-shadow: 0px 20px 20rem 5rem #000000 inset;
-	
+  background-image: url(../assets/svg/circuit-board.svg);
+  background-color: #000000;
+  box-shadow: 0px 20px 20rem 5rem #000000 inset;
 }
 #eventContainer #header {
-	
-	font-size: 1.525rem;
-	text-align: center;
+  font-size: 1.525rem;
+  text-align: center;
 
-	margin: 0rem 3rem 1.5rem;
+  margin: 0rem 3rem 1.5rem;
 }
 
 #events {
+  display: flex;
+  width: 100%;
 
-	display: flex;
-	width: 100%;
+  align-items: center;
+  justify-content: center;
 
-	align-items: center;
-	justify-content: center;
-
-	flex-wrap: nowrap;
-	flex-direction: row;
-
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 /* CARD ALIGNMENT AND ANIMATIONS */
 
 #events .card {
+  position: relative;
+  width: 13rem;
+  height: 16rem;
+  align-items: center;
 
-	position: relative;
-	width: 13rem;
-	height: 16rem;
-	align-items: center;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
 
-	border-radius: 0.5rem;
-	box-sizing: border-box;
-	overflow: hidden;
+  color: aliceblue;
 
-	color: aliceblue;
-
-	transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
-.card #cardface p{
-	color: rgb(139, 212, 255);
+.card #cardface p {
+  color: rgb(139, 212, 255);
 }
 
-.card::before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgb(3,24,11);
-	background: linear-gradient(70deg, rgba(223, 33, 163, 0.492) 0%, rgba(255,255,255,0) 50%); 
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(3, 24, 11);
+  background: linear-gradient(
+    70deg,
+    rgba(223, 33, 163, 0.492) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
 }
 
 /* Have cards laid into one another */
-.card:not(:first-child){
-	margin-left: -2.25rem;
+.card:not(:first-child) {
+  margin-left: -2.25rem;
 }
 
 /* Pop up */
-.card:hover{
-	transform: translateY(-1rem);
-	box-shadow: -1px 1px 10px 1px #000;
+.card:hover {
+  transform: translateY(-1rem);
+  box-shadow: -1px 1px 10px 1px #000;
 }
 
 /* Move succeeding cards to the right  */
 .card:hover ~ .card {
-	transform: translateX(3rem);
+  transform: translateX(3rem);
 }
 
 /* OVERLAY */
 
 .overlay {
+  position: absolute;
 
-	position: absolute;
+  left: 0;
+  right: 0;
 
-	left: 0;
-	right: 0;
-	
-	height: 0;
-	width: 100%;
+  height: 0;
+  width: 100%;
 
-	background-color: #0e0e13;
+  background-color: #0e0e13;
 
-	overflow: hidden;
-	transition: 250ms ease;
-
+  overflow: hidden;
+  transition: 250ms ease;
 }
 
 #cardHeader {
-	top: 0;
+  top: 0;
 }
 
 #cardFooter {
-	bottom: 0;
+  bottom: 0;
 }
 
-.card:hover #cardHeader{
-	height: 20%;
+.card:hover #cardHeader {
+  height: 20%;
 }
 
 .card:hover #cardFooter {
-	height: 77.5%;
+  height: 77.5%;
 }
 
 /* Event Details */
 
 .overlay label {
+  display: block;
 
-	display: block;
+  padding: 0 1.25rem;
+  width: fit-content;
+  height: fit-content;
 
-	padding: 0 1.25rem;
-	width: fit-content;
-	height: fit-content;
-
-
-	font-size: 0.67rem;
-	text-align: center;
-
+  font-size: 0.67rem;
+  text-align: center;
 }
 
 #cardHeader #eventName {
+  font-size: 0.825rem;
 
-	font-size: 0.825rem;
+  position: absolute;
+  top: 50%;
 
-	position: absolute;
-	top: 50%;
-
-	transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 #cardFooter #footDetails {
-	position: absolute;
-	top: 50%;
+  position: absolute;
+  top: 50%;
 
-	transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 #footDetails #eventDetails {
+  display: inline-block;
 
-	display: inline-block;
+  vertical-align: middle;
+  text-align: center;
 
-	vertical-align: middle;
-	text-align: center;
-
-	height: 6rem;
-	overflow-y: scroll;
+  height: 6rem;
+  overflow-y: scroll;
 }
 
 #footDetails #venueGrid {
+  display: flex;
 
-	display: flex;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0 1.25rem;
 
-	margin: 0;
-	margin-bottom: 1rem;
-	padding: 0 1.25rem;
-	
-	flex-wrap: wrap;
-	justify-content: space-between;
-	
-	line-height: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  line-height: 2rem;
 }
 
-#venueGrid label{
-	flex: 1 1 auto;
-	position: relative;
-	text-align: center;
-	padding: 0;
+#venueGrid label {
+  flex: 1 1 auto;
+  position: relative;
+  text-align: center;
+  padding: 0;
 }
 
 #venueGrid label + label {
-	border-left: 0.5px solid #116655;
+  border-left: 0.5px solid #116655;
 }
 
 #footDetails a {
-	text-decoration: none;
-	color: aliceblue;
+  text-decoration: none;
+  color: aliceblue;
 }
 
 #footDetails #redirect {
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
-	display: block;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+  background-color: #116655;
 
-	background-color: #116655;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 
-	position: relative;
-	bottom: 0;
-	width: 100%;
-
-
-	transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 #footDetails #redirect:hover {
-	border: none;
-	background-color: #408678;
-	color: #000;
+  border: none;
+  background-color: #408678;
+  color: #000;
 }
-
 
 /* CARDFACE */
 
 #cardface {
+  display: flex;
+  align-items: center;
 
-	display: flex;
-	align-items: center;
+  margin: 0;
+  height: 100%;
 
-	margin: 0;
-	height: 100%;
-	
-	background-color: #116655;
-	
+  background-color: #116655;
 }
 
-
 #cardface p {
+  color: black;
 
-	color: black;
+  font-size: 1.225rem;
+  text-align: center;
 
-	font-size: 1.225rem;
-	text-align: center;
-
-	padding: 2rem 2rem;
+  padding: 2rem 2rem;
 }
 
 @media screen and (max-width: 600px) {
-	#events {
-		justify-content: row;
-		flex-wrap: wrap;
-		flex-direction: row;
-	}
+  #events {
+    justify-content: row;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 
-	#events .card {
-		width: 12rem;
-		height: 16rem;
-		font-size: 0.8rem;
-	}
+  #events .card {
+    width: 12rem;
+    height: 16rem;
+    font-size: 0.8rem;
+  }
 
-	.card:not(:first-child){
-		margin-left: -2.25rem;
-	}
+  .card:not(:first-child) {
+    margin-left: -2.25rem;
+  }
 
-	#events .card:nth-child(2n + 1){
-		margin-left: 0;
-	}
-/* 	
+  #events .card:nth-child(2n + 1) {
+    margin-left: 0;
+  }
+  /* 	
 	.card:not(:first-child){
 
 	} */
 
-	/* .card:hover{
+  /* .card:hover{
 		box-shadow: -1px 1px 10px 1px #000;
 	}
 
@@ -273,21 +255,19 @@
 		transform: translateX(0);
 	} */
 
-	#cardHeader #eventName {
+  #cardHeader #eventName {
+    font-size: 0.8rem;
+  }
 
-		font-size: 0.8rem;
-	}
+  #footDetails #eventDetails {
+    font-size: 0.65rem;
+  }
 
-	#footDetails #eventDetails {
-		font-size: 0.65rem;
-	}
+  #venueGrid label {
+    font-size: 0.6rem;
+  }
 
-	#venueGrid label{
-		font-size: 0.6rem;
-	}
-
-	#cardface p {
-		font-size: 0.8rem;
-	}
-	
+  #cardface p {
+    font-size: 0.8rem;
+  }
 }

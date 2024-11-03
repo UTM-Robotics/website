@@ -40,7 +40,10 @@ const Blurb = () => {
             title="Students"
             description="We aim to foster student interest and engagement in the field of Robotics through different events. Apart from workshops, we also offer general meetings where we host speakers, watch Battlebots, and help students interested in tinkering with Arduinos."
           />
-          <GoalCell title="Collaborations" description="Engage in projects between clubs with our collaborative projects!" />
+          <GoalCell
+            title="Collaborations"
+            description="Engage in projects between clubs with our collaborative projects!"
+          />
         </div>
       </div>
     </div>

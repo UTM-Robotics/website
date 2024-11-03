@@ -1,64 +1,63 @@
 #blurb {
-    margin: 5rem 1rem;
-    padding: 0;
-    width: 60%;
-    font-size: 0.85rem;
-    margin: 0 auto;
+  margin: 5rem 1rem;
+  padding: 0;
+  width: 60%;
+  font-size: 0.85rem;
+  margin: 0 auto;
 
-    font-size: 0.65rem;
-    font-weight: 500;
-    color: rgb(161, 161, 161);
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: rgb(161, 161, 161);
 }
 
 .aboutContainer h2 {
-    margin: 0;
-    font-size: 1.5rem;
-    width: 100%;
-    text-align: center;
-    color: aliceblue;
+  margin: 0;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
 }
 
 .aboutUs {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .aboutUs p {
-    margin: 0.5rem 0;
-    font-size: 0.65rem;
-    font-weight: 500;
-    color: rgb(161, 161, 161);
+  margin: 0.5rem 0;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: rgb(161, 161, 161);
 }
 
 .goals {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 #goalGrid {
-    padding: 1rem 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.7rem;
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.7rem;
 }
 
 .goalTitle {
-    color: aliceblue;
-    font-size: 1.025rem;
-    font-weight: 900;
-    margin-bottom: 0.5rem;
-	margin-top: 0;
+  color: aliceblue;
+  font-size: 1.025rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
+@media screen and (max-width: 600px) {
+  #blurb {
+    width: 90%;
+  }
+  #goalGrid {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0;
+  }
 
-@media screen and (max-width: 600px){
-    #blurb {
-        width: 90%;
-    }
-    #goalGrid {
-        grid-template-columns: repeat(1, 1fr);
-        margin-left: 0;
-        }
-    
-        .aboutUs p{
-            margin-left: 0;
-        }
+  .aboutUs p {
+    margin-left: 0;
+  }
 }

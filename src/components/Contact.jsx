@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import emailjs from '@emailjs/browser';
-import Header from './Header';
-import Footer from './Footer';
-import '../styles/Contact.css';
+import React, { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
+import Header from "./Header";
+import Footer from "./Footer";
+import "../styles/Contact.css";
 
 const Contact = () => {
   useEffect(() => {
-    const aboutContainer = document.querySelector('.contactContainer');
-    aboutContainer.classList.add('fade-in-up');
+    const aboutContainer = document.querySelector(".contactContainer");
+    aboutContainer.classList.add("fade-in-up");
   }, []);
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -23,32 +23,52 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(import.meta.env.REACT_APP_EMAILJS_SERVICE_ID, import.meta.env.REACT_APP_EMAILJS_TEMPLATE_ID, e.target, import.meta.env.REACT_APP_EMAILJS_PUBLIC_KEY)
-      .then((result) => {
-        alert("Thanks for contacting us! We'll be in touch within 1-2 business days.");
-      }, (error) => {
-        alert("Oops, the email couldn't send! Try again tomorrow, or email us with our email instead.");
-      });
+    emailjs
+      .sendForm(
+        import.meta.env.REACT_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        e.target,
+        import.meta.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
+          alert(
+            "Thanks for contacting us! We'll be in touch within 1-2 business days.",
+          );
+        },
+        (error) => {
+          alert(
+            "Oops, the email couldn't send! Try again tomorrow, or email us with our email instead.",
+          );
+        },
+      );
 
-    setFormData({ name: '', email: '', message: '' });
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
-    <div id='contactForm'>
-      <div className='contactContainer'>
-        <h2 id='title'>Email us directly, or contact us using the form anonymously!</h2>
+    <div id="contactForm">
+      <div className="contactContainer">
+        <h2 id="title">
+          Email us directly, or contact us using the form anonymously!
+        </h2>
 
-        <div className='info'>
-          <div className='contactInfo'>
-
+        <div className="info">
+          <div className="contactInfo">
             <h2>Email</h2>
             <p>robotics@utmsu.ca</p>
 
             <h2>Address</h2>
-            <p>Hacklab, Deerfield Hall<br/>1535 Outer Circle<br/>Mississauga, ON</p>
+            <p>
+              Hacklab, Deerfield Hall
+              <br />
+              1535 Outer Circle
+              <br />
+              Mississauga, ON
+            </p>
           </div>
 
-          <form className='contactForm' onSubmit={handleSubmit}>
+          <form className="contactForm" onSubmit={handleSubmit}>
             <label>
               Name:
               <input
@@ -85,6 +105,6 @@ const Contact = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Contact;

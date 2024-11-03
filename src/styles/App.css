@@ -2,135 +2,144 @@
 /* ---COLOURS--- */
 
 :root {
-    --text: #fffafa
-    --body: #01b3e5
-    --accent-light: #02c1c2
-    --accent-light2: #73dbd4
-    --accent-dark: #024ca2
-    --accent-dark2: #003366
-	--black: #00000
+  --text: #fffafa --body: #01b3e5 --accent-light: #02c1c2 --accent-light2:
+    #73dbd4 --accent-dark: #024ca2 --accent-dark2: #003366 --black: #00000;
 }
 
-p, a, h2, h3, #redirect {
-	font-family: 'Inter', sans-serif;
+p,
+a,
+h2,
+h3,
+#redirect {
+  font-family: "Inter", sans-serif;
 }
 /* --- FONTS --- */
 @font-face {
-	font-family: "Kanit";
-	src: url(../assets/fonts/Kanit/Kanit-Regular.ttf) format("truetype");
+  font-family: "Kanit";
+  src: url(../assets/fonts/Kanit/Kanit-Regular.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "Kanit Light";
-    src: url(../assets/fonts/Kanit/Kanit-Light.ttf) format("truetype");
+  font-family: "Kanit Light";
+  src: url(../assets/fonts/Kanit/Kanit-Light.ttf) format("truetype");
 }
 
 @font-face {
-	font-family: "Kanit Thin";
-	src: url(../assets/fonts/Kanit/Kanit-Thin.ttf) format("truetype");
+  font-family: "Kanit Thin";
+  src: url(../assets/fonts/Kanit/Kanit-Thin.ttf) format("truetype");
 }
 
 @font-face {
-	font-family: "Quicksand";
-	src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+  font-family: "Quicksand";
+  src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
 @font-face {
-	font-family: "Syne";
-	src: url(../assets/fonts/Syne/static/Syne-Regular.ttf);
+  font-family: "Syne";
+  src: url(../assets/fonts/Syne/static/Syne-Regular.ttf);
 }
 
 html {
-	width: 100vw;
+  width: 100vw;
 }
 
 body {
-	width: 100vw;
-	margin: 0 auto;
+  width: 100vw;
+  margin: 0 auto;
 }
 
-::-webkit-scrollbar{
-	display: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Syne';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Syne";
 }
 
-p, a, #redirect {
-	font-family: 'Quicksand', sans-serif;
+p,
+a,
+#redirect {
+  font-family: "Quicksand", sans-serif;
 }
 
 button {
-	border: none;
-	background-color: transparent;
-	color: inherit;
-	cursor: pointer;
-	padding: 0;
-	font-size: inherit;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
 }
-  
+
 button:focus {
-	outline: none;
+  outline: none;
 }
 
-.ul{
-	text-decoration: underline;
-	text-decoration-color: rgb(54, 92, 74);
+.ul {
+  text-decoration: underline;
+  text-decoration-color: rgb(54, 92, 74);
 }
 
-span, label {
-	font-family: "Quicksand";
+span,
+label {
+  font-family: "Quicksand";
 }
 
-@media screen and (min-width: 0px){
-    html {
-		font-size: 10px;
-		
-	}
+@media screen and (min-width: 0px) {
+  html {
+    font-size: 10px;
+  }
 
-	h1, h2, h3, h4, h5, h6, p {
-		text-align: center;
-	}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    text-align: center;
+  }
 }
 
-
-@media screen and (min-width: 480px){
-    html {
-		font-size: 18px;
-	}
-
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 18px;
+  }
 }
 
-@media screen and (min-width: 600px){
-    html {
-		font-size: 18px;
-	}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 18px;
+  }
 }
 
-@media screen and (min-width: 1025px){
-    html {
-		font-size: 18px;
-	}
-
+@media screen and (min-width: 1025px) {
+  html {
+    font-size: 18px;
+  }
 }
 
-@media screen and (min-width: 1281px){
-    html {
-		font-size: 20px;
-	}
+@media screen and (min-width: 1281px) {
+  html {
+    font-size: 20px;
+  }
 }
 
-@media screen and (min-width: 1681px){
-    html {
-		font-size: 24px;
-	}
+@media screen and (min-width: 1681px) {
+  html {
+    font-size: 24px;
+  }
 }
 
-@media screen and (min-width: 1921px){
-    html {
-		font-size: 1.5vw;
-	}
+@media screen and (min-width: 1921px) {
+  html {
+    font-size: 1.5vw;
+  }
 }
 
 /* @media screen and (max-width: 776px) {

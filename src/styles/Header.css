@@ -1,130 +1,114 @@
 .headerContainer {
-	position: sticky;
-	top: 0;
-	left: 0;
-	z-index: 4;
-	
-	padding: 0rem 1rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 4;
 
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
+  padding: 0rem 1rem;
 
-	background-color: black;
-	backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 
-	transition: 300ms ease;
+  background-color: black;
+  backdrop-filter: blur(15px);
 
+  transition: 300ms ease;
 }
 
-.hiddenNav{
-	transform: translateY(-100%);
-	transition: all 100ms ease;
+.hiddenNav {
+  transform: translateY(-100%);
+  transition: all 100ms ease;
 }
 
 #logoContainer {
-	flex-basis: 100%;
+  flex-basis: 100%;
 
-	display: flex;
-	flex-direction: row;
-	-ms-flex-align: center;
-	justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  -ms-flex-align: center;
+  justify-content: space-around;
 
-	cursor: pointer;
+  cursor: pointer;
 }
 
+.headerContainer .logo {
+  margin: auto 0;
 
-.headerContainer .logo{
-	margin: auto 0;
-
-	aspect-ratio: 1 / 1;
-	width: 1.8rem;
-
+  aspect-ratio: 1 / 1;
+  width: 1.8rem;
 }
-
-
 
 .headerContainer #logoName {
-	font-size: 0.65rem;
-	display: inline-block;
-	width: max-content;
-	margin: auto;
-	margin-left: 0.5rem;
-
+  font-size: 0.65rem;
+  display: inline-block;
+  width: max-content;
+  margin: auto;
+  margin-left: 0.5rem;
 }
-
 
 .headerContainer #pages {
-	flex-basis: 100%;
+  flex-basis: 100%;
 
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 
-
-
 .headerContainer #redirect {
+  font-size: 0.65rem;
+  color: white;
 
-	font-size: 0.65rem;
-	color: white;
+  height: 100%;
+  /* width: 6.5rem; I'm too lazy just change this if the redirect sizes are too small */
+  padding: 1rem 2rem;
 
-	height: 100%;
-	/* width: 6.5rem; I'm too lazy just change this if the redirect sizes are too small */
-	padding: 1rem 2rem;
+  text-decoration: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
 
-	text-decoration: none;
-	border-bottom: 2px solid rgb(0, 0, 0);
-
-	transition: 125ms ease-in-out;
+  transition: 125ms ease-in-out;
 }
 
 .headerContainer .socials {
-	flex-basis: 100%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: end;
-	margin: auto 0;
-	margin-right: 0.5rem;
-}	
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: end;
+  margin: auto 0;
+  margin-right: 0.5rem;
+}
 
-.headerContainer .socials img{
-	width: 0.85rem;
-	height: 0.85rem;
+.headerContainer .socials img {
+  width: 0.85rem;
+  height: 0.85rem;
 }
 
 .headerContainer #redirect:hover {
-	background-color: #060606;
-	border-color: lightgreen;
+  background-color: #060606;
+  border-color: lightgreen;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+  .headerContainer {
+    justify-content: space-between;
+  }
 
-	.headerContainer {
-		justify-content: space-between;
-	}
+  .headerContainer #logoName {
+    /* display: none; */
+  }
 
-    .headerContainer #logoName {
-		/* display: none; */
-	}
+  .headerContainer #pages {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+  }
 
-	.headerContainer #pages {
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: end;
+  .headerContainer #redirect {
+    padding: 1.25rem 1rem;
+  }
 
-
-	}
-
-	.headerContainer #redirect {
-
-		padding: 1.25rem 1rem;
-
-	}
-
-	.headerContainer .socials{
-		display: none;
-	}
+  .headerContainer .socials {
+    display: none;
+  }
 }

@@ -1,11 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
 
 // https://vite.dev/config/
 export default defineConfig({
   preview: {
-    port: 3000
+    port: 3000,
   },
-  envPrefix: 'REACT_APP_',
+  envPrefix: "REACT_APP_",
   plugins: [react()],
-})
+});
