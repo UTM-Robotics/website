@@ -1,6 +1,5 @@
-.contactContainer {
+.contact {
   padding: 2rem 1rem;
-  width: 65%;
   margin: 0 auto;
   opacity: 0;
   transform: translateY(20px);
@@ -9,52 +8,49 @@
     transform 1s ease;
 }
 
-.contactContainer #title {
-  font-size: 1.525rem;
-  margin: 1rem 1.5rem 2rem;
-  text-align: center;
-}
-
-.contactContainer.fade-in-up {
+.contact.fade-in-up {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* Add your preferred styles for the overall container */
-.info {
-  display: flex;
+.contact-content {
+  border-radius: 1rem;
   align-items: center;
-  font-size: 0.7rem;
   padding: 2rem 1rem 1.5rem;
   background-color: #050505;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Style for the contact information section */
-.contactInfo {
+.contact-info {
   flex: 1;
-  padding-right: 1.5rem;
+  text-align: center;
+  line-height: 2;
+  font-size-adjust: 0.75;
 }
 
-.contactInfo h2 {
+.contact-info h3 {
   color: white;
 }
 
-.contactInfo p {
+.contact-info p {
   color: #9b9b9b;
   margin-bottom: 0.75rem;
 }
 
-.contactForm {
+.contact-form {
   flex: 1;
 }
 
-.contactForm label {
+.contact-form label {
   display: block;
   margin-bottom: 1rem;
 }
 
-.contactForm input,
-.contactForm textarea {
+.contact-form input,
+.contact-form textarea {
   background-color: rgb(46, 54, 61);
   width: 100%;
   padding: 0.25rem;
@@ -66,13 +62,13 @@
   border-radius: 0.25rem;
 }
 
-.contactForm textarea {
+.contact-form textarea {
   height: 150px; /* Adjust the height as needed */
   resize: vertical; /* Allow vertical resizing */
 }
 
-.contactForm button {
-  background-color: lightgreen;
+.contact-form button {
+  background-color: var(--accent);
   color: #000;
   padding: 0.65rem 0.85rem;
   border: none;
@@ -80,16 +76,12 @@
   cursor: pointer;
 }
 
-.contactForm button:hover {
+.contact-form button:hover {
   background-color: #45a049;
 }
 
-@media screen and (max-width: 600px) {
-  .contactContainer {
-    width: 95%;
-    margin: 0 auto;
-  }
-  .info {
-    display: block;
+@media screen and (max-width: 750px) {
+  .contact-content {
+    flex-direction: column;
   }
 }

@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import Header from "./Header";
-import Footer from "./Footer";
 import "../styles/Contact.css";
 
 const Contact = () => {
   useEffect(() => {
-    const aboutContainer = document.querySelector(".contactContainer");
-    aboutContainer.classList.add("fade-in-up");
+    const contactUs = document.getElementById("contact-us");
+    contactUs.classList.add("fade-in-up");
   }, []);
 
   const [formData, setFormData] = useState({
@@ -31,12 +29,12 @@ const Contact = () => {
         import.meta.env.REACT_APP_EMAILJS_PUBLIC_KEY,
       )
       .then(
-        (result) => {
+        () => {
           alert(
             "Thanks for contacting us! We'll be in touch within 1-2 business days.",
           );
         },
-        (error) => {
+        () => {
           alert(
             "Oops, the email couldn't send! Try again tomorrow, or email us with our email instead.",
           );
@@ -47,63 +45,61 @@ const Contact = () => {
   };
 
   return (
-    <div id="contactForm">
-      <div className="contactContainer">
-        <h2 id="title">
-          Email us directly, or contact us using the form anonymously!
-        </h2>
+    <section className="contact" id="contact-us">
+      <h2 className="section-header">Contact Us</h2>
 
-        <div className="info">
-          <div className="contactInfo">
-            <h2>Email</h2>
-            <p>robotics@utmsu.ca</p>
+      <div className="contact-content">
+        <div className="contact-info">
+          <h3>Email</h3>
+          <p>robotics@utmsu.ca</p>
 
-            <h2>Address</h2>
-            <p>
-              Hacklab, Deerfield Hall
-              <br />
-              1535 Outer Circle
-              <br />
-              Mississauga, ON
-            </p>
-          </div>
+          <br />
 
-          <form className="contactForm" onSubmit={handleSubmit}>
-            <label>
-              Name:
-              <input
-                type="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-              />
-            </label>
-
-            <label>
-              Email:
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </label>
+          <h3>Address</h3>
+          <p>
+            DH 2014 (Hacklab), Deerfield Hall
             <br />
-
-            <label>
-              Message:
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-              />
-            </label>
+            1535 Outer Circle
             <br />
-            <button type="submit">Submit</button>
-          </form>
+            Mississauga, ON
+          </p>
         </div>
+
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <label>
+            Name:
+            <input
+              type="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </label>
+
+          <label>
+            Email:
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </label>
+          <br />
+
+          <label>
+            Message:
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+            />
+          </label>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
       </div>
-    </div>
+    </section>
   );
 };
 

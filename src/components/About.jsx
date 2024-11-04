@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-// import Header from './Header';
-// import Footer from './Footer'
 import Blurb from "./Blurb";
 
 import "../styles/About.css";
@@ -12,43 +10,62 @@ import { MEMBERS } from "./details/teamDetails";
 const About = () => {
   // Fade in and up.
   useEffect(() => {
-    const aboutContainer = document.querySelector(".aboutContainer");
+    const aboutContainer = document.getElementById("about");
     aboutContainer.classList.add("fade-in-up");
   }, []);
 
   return (
-    <div>
-      <div className="aboutContainer" id="aboutContainer">
-        <Blurb />
+    <div className="about" id="about">
+      <Blurb />
 
-        <div className="team-section-container">
-          <h1 className="meet-the-team">Meet the Team</h1>
+      <section className="about-team">
+        <h2 className="section-header">Meet the Team</h2>
 
-          <div className="teamContainer">
-            {MEMBERS.map((member) => (
-              <div key={member.id} className="teamMember">
-                <img src={member.image} alt={member.name} />
-                <div className="desc">
-                  <div className="title">
-                    <h3 className="name">{member.name}</h3>
-                    {/* <div className="social-icons">
-											<a href={`${member.linkedin}`} target="_blank" rel="noopener noreferrer">
-												<FaLinkedin className="linkedin-icon" />
-											</a>
-
-											<a href={`${member.github}`} target="_blank" rel="noopener noreferrer">
-												<FaGithub className="github-icon"/>
-											</a>
-										</div> */}
-                  </div>
-                  <p className="role">{member.role}</p>
-                  <p className="bio">{member.bio}</p>
+        <div className="about-team-members">
+          {MEMBERS.map((member) => (
+            <div key={member.id} className="about-team-members-member">
+              <img src={member.image} alt />
+              <div className="about-team-members-desc">
+                <div className="about-team-members-title">
+                  <h3 className="about-team-members-name">{member.name}</h3>
                 </div>
+
+                {member.role && (
+                  <p className="about-team-members-role">{member.role}</p>
+                )}
+                {member.bio && (
+                  <p className="about-team-members-bio">{member.bio}</p>
+                )}
+                {(member.linkedin || member.github) && (
+                  <div className="about-team-members-socials">
+                    {member.linkedin && (
+                      <a
+                        href={`${member.linkedin}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`${member.name}'s LinkedIn`}
+                      >
+                        <FaLinkedin />
+                      </a>
+                    )}
+
+                    {member.github && (
+                      <a
+                        href={`${member.github}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`${member.name}'s GitHub`}
+                      >
+                        <FaGithub />
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </div>
+      </section>
     </div>
   );
 };

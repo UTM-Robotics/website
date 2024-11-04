@@ -1,70 +1,36 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap'); */
-/* ---COLOURS--- */
-
 :root {
-  --text: #fffafa --body: #01b3e5 --accent-light: #02c1c2 --accent-light2:
-    #73dbd4 --accent-dark: #024ca2 --accent-dark2: #003366 --black: #00000;
-}
-
-p,
-a,
-h2,
-h3,
-#redirect {
-  font-family: "Inter", sans-serif;
-}
-/* --- FONTS --- */
-@font-face {
-  font-family: "Kanit";
-  src: url(../assets/fonts/Kanit/Kanit-Regular.ttf) format("truetype");
+  --accent: lightgreen;
 }
 
 @font-face {
-  font-family: "Kanit Light";
-  src: url(../assets/fonts/Kanit/Kanit-Light.ttf) format("truetype");
+  font-family: "Akira Expanded";
+  src: url("../assets/fonts/akira.woff2") format("woff2");
 }
 
-@font-face {
-  font-family: "Kanit Thin";
-  src: url(../assets/fonts/Kanit/Kanit-Thin.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Quicksand";
-  src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
-}
-
-@font-face {
-  font-family: "Syne";
-  src: url(../assets/fonts/Syne/static/Syne-Regular.ttf);
-}
-
-html {
-  width: 100vw;
-}
-
+html,
 body {
-  width: 100vw;
   margin: 0 auto;
-}
-
-::-webkit-scrollbar {
-  display: none;
+  color-scheme: dark;
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Syne";
+h2 {
+  font-family: "Akira Expanded", sans-serif;
 }
 
 p,
 a,
-#redirect {
-  font-family: "Quicksand", sans-serif;
+#redirect,
+span,
+label {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 button {
@@ -85,69 +51,8 @@ button:focus {
   text-decoration-color: rgb(54, 92, 74);
 }
 
-span,
-label {
-  font-family: "Quicksand";
+.upper-style {
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
 }
-
-@media screen and (min-width: 0px) {
-  html {
-    font-size: 10px;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 1281px) {
-  html {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 1681px) {
-  html {
-    font-size: 24px;
-  }
-}
-
-@media screen and (min-width: 1921px) {
-  html {
-    font-size: 1.5vw;
-  }
-}
-
-/* @media screen and (max-width: 776px) {
-	html {
-		font-size: 12px;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		text-align: center;
-	}
-} */

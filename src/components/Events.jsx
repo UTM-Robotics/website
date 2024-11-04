@@ -1,16 +1,6 @@
-import React from "react";
 import { EVENTS } from "./details/eventDetails";
 
 import "../styles/Events.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Link,
-  useNavigate,
-} from "react-router-dom";
-
-import redirect from "../assets/svg/arrow-up-right-from-square-solid.svg";
 
 const Events = () => {
   return (
@@ -18,7 +8,7 @@ const Events = () => {
       <h1 id="header">Upcoming events</h1>
       <div id="events">
         {EVENTS.map((event) => (
-          <div className="card">
+          <div className="card" key={event.id}>
             <div id="cardface">
               <p>{event.name}</p>
             </div>
@@ -29,9 +19,9 @@ const Events = () => {
               <div id="footDetails">
                 <label id="eventDetails">{event.description}</label>
                 <div id="venueGrid">
-                  <label id="a">{event.venue}</label>
+                  <label>{event.venue}</label>
                   <label>{event.startTime}</label>
-                  <label id="c">{event.date}</label>
+                  <label>{event.date}</label>
                 </div>
                 <a href={event.url}>
                   <button id="redirect">View Details</button>
