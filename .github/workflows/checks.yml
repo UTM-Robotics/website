@@ -1,0 +1,17 @@
+name: Checks
+
+on: [push, pull_request]
+jobs:
+  website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install modules
+        run: npm ci
+
+      - name: Run Svelte check
+        run: npm run check
+
+      - name: Build eslint
+        run: npm run lint

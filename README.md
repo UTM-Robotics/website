@@ -1,3 +1,3 @@
 Robotics Website
 
-Built using React
+Built using Svelte

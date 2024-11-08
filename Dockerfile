@@ -1,14 +1,25 @@
-FROM node:lts AS builder
+FROM node:lts-alpine AS builder
 
 WORKDIR /
 
 COPY package.json package-lock.json ./
+
 RUN npm ci
+
 COPY . .
+
 RUN npm run build
 
-FROM httpd:2.4 AS runner
 
-COPY --from=builder /dist/ /usr/local/apache2/htdocs/
+FROM node:lts-alpine AS production
 
-EXPOSE 80
+WORKDIR /
+
+COPY --from=builder /build /build
+COPY --from=builder /package.json /package-lock.json ./
+
+EXPOSE 3000
+
+ENV NODE_ENV=production
+
+CMD ["node", "build"]
