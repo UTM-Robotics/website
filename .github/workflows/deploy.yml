@@ -12,9 +12,17 @@ jobs:
       name: production
       url: https://robotics-club.utm.utoronto.ca/
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
+
+      - name: remove existing team repo
+        run: rm -rf src/lib/team
+
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ secrets.TEAM_REPO }}
+          path: "src/lib/team"
 
       - name: create env files
         run: echo "${{ secrets.ENV }}" > .env;

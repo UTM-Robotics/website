@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { team, type TeamMemberProps } from '$lib/data/team';
+	import { team, type TeamMemberProps } from '$lib/team/team';
 	import TeamMember from '$lib/components/TeamMember.svelte';
 </script>
 
