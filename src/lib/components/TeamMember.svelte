@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Fa from 'svelte-fa';
 	import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-	import noImage from '$lib/assets/team/none.png';
+	import noImage from '$lib/assets/none.png';
 	import type { TeamMemberProps } from '$lib/team/team';
 
 	const { name, role, bio, image, linkedin, github }: TeamMemberProps = $props();
