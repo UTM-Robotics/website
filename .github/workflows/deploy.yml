@@ -21,7 +21,7 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          repository: ${{ secrets.TEAM_REPO }}
+          repository: UTM-Robotics/team-images
           path: "src/lib/team"
 
       - name: create env files
