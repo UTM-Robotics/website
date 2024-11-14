@@ -11,3 +11,8 @@ export interface TeamMemberProps {
  * stub data
  */
 export const team: TeamMemberProps[] = [];
+
+/**
+ * when to stop showing this data
+ */
+export const expires = new Date(0);

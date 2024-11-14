@@ -1,17 +1,21 @@
 <script lang="ts">
-	import { team, type TeamMemberProps } from '$lib/team/team';
+	import { team, expires, type TeamMemberProps } from '$lib/team/team';
 	import TeamMember from '$lib/components/TeamMember.svelte';
+
+	const today = new Date();
 </script>
 
-<section class="about-team">
-	<h2 class="section-header">Meet the Team</h2>
+{#if today.getTime() < expires.getTime()}
+	<section class="about-team">
+		<h2 class="section-header">Meet the Team</h2>
 
-	<div class="about-team-members">
-		{#each team as member}
-			<TeamMember {...member as TeamMemberProps} />
-		{/each}
-	</div>
-</section>
+		<div class="about-team-members">
+			{#each team as member}
+				<TeamMember {...member as TeamMemberProps} />
+			{/each}
+		</div>
+	</section>
+{/if}
 
 <style>
 	.about-team {
